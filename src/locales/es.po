@@ -1,0 +1,2433 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-19 14:51+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: @lingui/cli\n"
+
+#: src/app/components/dialog/preference-dialog.tsx:56
+msgid "I'm interested in:"
+msgstr "Me interesa:"
+
+#. placeholder {0}: plan.discount
+#: src/app/components/profile/v2/subscription-card.tsx:52
+msgid "{0} OFF"
+msgstr "{0} DE DESCUENTO"
+
+#. placeholder {0}: request.age
+#: src/app/components/babes/tabs/tab-style.tsx:104
+msgid "{0} years old"
+msgstr "{0} años"
+
+#: src/app/components/messages/character-info.tsx:58
+msgid "{chatbotAge} years old"
+msgstr "{chatbotAge} años"
+
+#: src/app/components/profile/subscription-card.tsx:55
+msgid "{discount} OFF"
+msgstr "{discount} DE DESCUENTO"
+
+#: src/app/components/explore/footer.tsx:163
+msgid "© 2025 mybabes.ai. All Rights Reserved."
+msgstr "© 2025 mybabes.ai. Todos los derechos reservados."
+
+#. placeholder {0}: plan.discount
+#: src/app/components/profile/addon-tokens.tsx:39
+msgid "+{0} bonus"
+msgstr "+{0} de bono"
+
+#: src/app/components/profile/v2/one-time-payment-card.tsx:67
+msgid "+{discount} bonus"
+msgstr "+{discount} de bono"
+
+#. placeholder {0}: plan.displayPrice
+#: src/app/components/profile/addon-tokens.tsx:50
+msgid "${0}"
+msgstr "${0}"
+
+#: src/app/components/banner/subscription-benefits.tsx:48
+msgid "200 tokens/month + 10 daily bonus"
+msgstr "200 fichas/mes + 10 de bono diario"
+
+#: src/app/components/babes/tabs/tab-art-style.tsx:23
+msgid "3D Anime"
+msgstr "Anime 3D"
+
+#: src/app/[locale]/not-found.tsx:10
+msgid "404 Not Found"
+msgstr "404 No encontrado"
+
+#: src/app/components/generator/preset-tabs.tsx:22
+msgid "Accessories"
+msgstr "Accesorios"
+
+#: src/app/components/dialog/buy-tokens.tsx:32
+msgid "Additional tokens never expire"
+msgstr "Los tokens adicionales nunca vencen"
+
+#: src/app/components/layout/desktop-nav-links.tsx:80
+msgid "Affiliate"
+msgstr "Afiliado"
+
+#: src/app/[locale]/babes/[chatbotID]/page.tsx:97
+msgid "Age"
+msgstr "Edad"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:67
+msgid "Alien"
+msgstr "Alienígena"
+
+#: src/app/[locale]/(authenticated)/gallery/gallery-tabs.tsx:14
+msgid "All"
+msgstr "Todo"
+
+#: src/app/components/messages/chatbot-message.tsx:66
+msgid "Almost done"
+msgstr "Casi listo"
+
+#: src/app/components/dialog/validate-email.tsx:104
+msgid "Already have an account?"
+msgstr "¿Ya tienes una cuenta?"
+
+#: src/app/components/dialog/auth/sign-up.tsx:172
+msgid "Already have an account?<0> Sign in!</0>"
+msgstr "¿Ya tienes una cuenta?<0> Inicia sesión!</0>"
+
+#: src/app/[locale]/thanks/thanks.tsx:64
+msgid "Also don’t forget to<0>join our discord.</0>"
+msgstr "También recuerda<0>unirte a nuestro Discord.</0>"
+
+#: src/app/components/generator/templates.tsx:25
+msgid "Anal"
+msgstr "Anal"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:59
+msgid "Android"
+msgstr "Android"
+
+#: src/app/components/layout/header/desktop-header.tsx:86
+#: src/app/components/explore/explore-tabs.tsx:22
+#: src/app/components/babes/tabs/tab-style.tsx:34
+#: src/app/components/babes/tabs/tab-occupation.tsx:36
+#: src/app/components/babes/tabs/tab-art-style.tsx:19
+#: src/app/[locale]/generator/generator-tabs.tsx:29
+#: src/app/[locale]/(authenticated)/profile/settings.tsx:119
+msgid "Anime"
+msgstr "Anime"
+
+#: src/app/components/babes/tabs/tab-ethnicity.tsx:37
+#: src/app/components/babes/tabs/tab-ethnicity.tsx:67
+msgid "Arab"
+msgstr "Árabe"
+
+#: src/app/components/dialog/app-rating.tsx:146
+msgid "Are anime girls attractive?"
+msgstr "¿Son atractivas las chicas anime?"
+
+#: src/app/components/dialog/app-rating.tsx:134
+msgid "Are realistic girls attractive?"
+msgstr "¿Son atractivas las chicas realistas?"
+
+#: src/app/components/dialog/cancel/cancel-subscription.tsx:121
+msgid ""
+"Are you sure you want to cancel your subscription?<0> You will lose all your"
+" conversations and remaining tokens.</0>"
+msgstr ""
+"¿Estás seguro de que quieres cancelar tu suscripción?<0>Perderás todas tus "
+"conversaciones y los tokens restantes.</0>"
+
+#: src/app/components/babes/custom-chatbot-delete-dialog.tsx:55
+msgid "Are you sure you want to delete <0>{chatbotName}</0>"
+msgstr "¿Estás seguro de que quieres eliminar <0>{chatbotName}</0>?"
+
+#: src/app/components/dialog/cancel/delete-account.tsx:127
+msgid ""
+"Are you sure you want to delete your account?<0>You will lose all your data "
+"and remaining tokens.</0>"
+msgstr ""
+"¿Estás seguro de que quieres eliminar tu cuenta?<0>Perderás todos tus datos "
+"y los tokens restantes.</0>"
+
+#: src/app/components/dialog/unlock.tsx:50
+msgid "Are you sure you want to unlock Anna?"
+msgstr "¿Estás seguro de que quieres desbloquear a Anna?"
+
+#: src/app/components/babes/tabs/tab-ethnicity.tsx:25
+#: src/app/components/babes/tabs/tab-ethnicity.tsx:55
+msgid "Asian"
+msgstr "Asiática"
+
+#: src/app/components/babes/tabs/tab-body.tsx:30
+#: src/app/components/babes/tabs/tab-body.tsx:52
+msgid "Athletic"
+msgstr "Atlética"
+
+#: src/app/components/layout/mobile-nav-links.tsx:37
+#: src/app/[locale]/babes/page.tsx:41
+msgid "Babes"
+msgstr "Babes"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:47
+msgid "Barbarian"
+msgstr "Bárbaro"
+
+#: src/app/components/generator/presets.tsx:109
+msgid "Bathtub"
+msgstr "Bañera"
+
+#: src/app/components/messages/chat.tsx:265
+msgid "Become premium"
+msgstr "Hazte premium"
+
+#: src/app/components/messages/chat.tsx:317
+#: src/app/components/messages/chat.tsx:352
+#: src/app/components/layout/desktop-nav-links.tsx:160
+#: src/app/components/dialog/token-pricing.tsx:58
+#: src/app/[locale]/(authenticated)/subscription/subscription-mobile.tsx:39
+msgid "Become Premium"
+msgstr "Hazte Premium"
+
+#: src/app/components/banner/subscription-benefits.tsx:186
+msgid "Become PREMIUM"
+msgstr "Hazte PREMIUM"
+
+#: src/app/components/generator/presets.tsx:114
+msgid "Bedroom"
+msgstr "Dormitorio"
+
+#: src/app/components/messages/suggestions.tsx:34
+msgid "Bend over so I can check that ass."
+msgstr "Inclínate para que te revise ese trasero."
+
+#: src/app/[locale]/(authenticated)/subscription/tabs.tsx:74
+msgid "Best Deal"
+msgstr "Mejor oferta"
+
+#: src/app/components/generator/presets.tsx:40
+msgid "Bikini "
+msgstr "Bikini"
+
+#: src/app/components/babes/tabs/tab-ethnicity.tsx:29
+#: src/app/components/babes/tabs/tab-ethnicity.tsx:59
+msgid "Black"
+msgstr "Negra"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:98
+#: src/app/components/babes/tabs/tab-hair.tsx:128
+msgid "Black Hair"
+msgstr "Cabello negro"
+
+#: src/app/components/explore/footer.tsx:99
+msgid "Blocked Content Policy"
+msgstr "Política de contenido bloqueado"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:90
+#: src/app/components/babes/tabs/tab-hair.tsx:120
+msgid "Blonde Hair"
+msgstr "Cabello rubio"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:159
+#: src/app/components/babes/tabs/tab-hair.tsx:177
+msgid "Blue Eyes"
+msgstr "Ojos azules"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:110
+#: src/app/components/babes/tabs/tab-hair.tsx:140
+msgid "Blue Hair"
+msgstr "Cabello azul"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:56
+msgid "Board Games"
+msgstr "Juegos de mesa"
+
+#: src/app/[locale]/babes/[chatbotID]/page.tsx:104
+msgid "Body Type"
+msgstr "Tipo de cuerpo"
+
+#: src/app/components/generator/templates.tsx:31
+msgid "Bondage"
+msgstr "Bondage"
+
+#: src/app/[locale]/babes/[chatbotID]/page.tsx:128
+msgid "Boobs"
+msgstr "Senos"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:29
+#: src/app/components/babes/tabs/tab-hair.tsx:59
+msgid "Braids"
+msgstr "Trenzas"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:163
+#: src/app/components/babes/tabs/tab-hair.tsx:181
+msgid "Brown Eyes"
+msgstr "Ojos marrones"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:94
+#: src/app/components/babes/tabs/tab-hair.tsx:124
+msgid "Brunette Hair"
+msgstr "Cabello castaño"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:33
+#: src/app/components/babes/tabs/tab-hair.tsx:63
+msgid "Bun"
+msgstr "Moño"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:26
+msgid "Business Owner"
+msgstr "Propietario de negocio"
+
+#: src/app/[locale]/babes/[chatbotID]/page.tsx:133
+msgid "Butt"
+msgstr "Trasero"
+
+#: src/app/components/profile/token-usage.tsx:66
+#: src/app/components/messages/chat.tsx:330
+#: src/app/components/messages/chat.tsx:369
+#: src/app/components/dialog/buy-tokens.tsx:29
+msgid "Buy more tokens"
+msgstr "Comprar más tokens"
+
+#: src/app/components/notifications/generator-notifications.tsx:96
+#: src/app/[locale]/(authenticated)/subscription/tabs.tsx:22
+msgid "Buy Tokens"
+msgstr "Comprar tokens"
+
+#: src/app/[locale]/(authenticated)/subscription/get-tokens-desktop.tsx:35
+msgid ""
+"Buy tokens as a one-off purchase. Enjoy full premium features with no <0/> "
+"commitment, no strings attached and no expiration date."
+msgstr ""
+"Compra tokens como una compra única. Disfruta de todas las funciones premium"
+" sin <0/> compromiso, sin ataduras y sin fecha de expiración."
+
+#: src/app/[locale]/(authenticated)/subscription/get-tokens-mobile.tsx:38
+msgid ""
+"Buy Tokens as a one-off purchase. No commitment, no strings attached, no "
+"expiration date."
+msgstr ""
+"Compra tokens como una compra única. Sin compromiso, sin ataduras, sin fecha"
+" de expiración."
+
+#: src/app/components/dialog/auth/sign-up.tsx:161
+msgid ""
+"By signing up, you agree to our <0>Terms of Service</0>, acknowledge that "
+"all content is AI-generated and fictional, and you confirm that you are at "
+"least 18 years old."
+msgstr ""
+"Al registrarte, aceptas nuestros <0>Términos de Servicio</0>, reconoces que "
+"todo el contenido es generado por IA y ficticio, y confirmas que tienes al "
+"menos 18 años."
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:54
+msgid "Camping"
+msgstr "Campamento"
+
+#: src/app/components/dialog/cancel/cancel-subscription.tsx:114
+#: src/app/components/actions/truevo/cancel-subscription.tsx:38
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/app/components/dialog/cancel/cancel-discount.tsx:82
+msgid "Cancel subscription"
+msgstr "Cancelar suscripción"
+
+#: src/app/components/profile/token-usage.tsx:57
+msgid "Cancels on"
+msgstr "Se cancela el"
+
+#: src/app/[locale]/declined/page.tsx:56
+msgid "Card issuer declined the transaction."
+msgstr "El emisor de la tarjeta rechazó la transacción."
+
+#: src/app/components/babes/tabs/tab-personality.tsx:17
+msgid "Caregiver"
+msgstr "Cuidador"
+
+#: src/app/components/babes/tabs/tab-art-style.tsx:27
+msgid "Cartoon"
+msgstr "Dibujos animados"
+
+#: src/app/components/babes/tabs/tab-ethnicity.tsx:21
+#: src/app/components/babes/tabs/tab-ethnicity.tsx:51
+msgid "Caucasian"
+msgstr "Caucásica"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:83
+msgid "Celestial Goddess"
+msgstr "Diosa celestial"
+
+#: src/app/components/dialog/change-password.tsx:56
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#: src/app/components/layout/mobile-nav-links.tsx:31
+#: src/app/components/layout/desktop-nav-links.tsx:35
+#: src/app/components/explore/footer.tsx:66
+#: src/app/components/character/chatbot-actions.tsx:24
+#: src/app/components/babes/custom-character-card-actions.tsx:51
+msgid "Chat"
+msgstr "Chat"
+
+#: src/app/components/dialog/cancel/cancel-reasons.tsx:103
+msgid "Chat is not entertaining enough."
+msgstr "El chat no es lo suficientemente entretenido."
+
+#: src/app/components/banner/signup-benefits.tsx:45
+msgid "Chat with AI babes"
+msgstr "Chatea con babes de IA"
+
+#: src/app/components/dialog/auth/header-image.tsx:10
+#: src/app/components/dialog/auth/header-image.tsx:15
+msgid "Chat, create, have fun."
+msgstr "Chatea, crea, diviértete."
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:55
+msgid "Chess"
+msgstr "Ajedrez"
+
+#: src/app/components/generator/templates.tsx:90
+#: src/app/components/generator/presets.tsx:8
+msgid "Choker"
+msgstr "Choker"
+
+#: src/app/components/babes/tabs/tab-style.tsx:51
+msgid "Choose a style"
+msgstr "Elige un estilo"
+
+#: src/app/components/babes/tabs/tab-art-style.tsx:46
+msgid "Choose Art Style"
+msgstr "Elige el estilo de arte"
+
+#: src/app/components/babes/tabs/tab-body.tsx:216
+msgid "Choose Body Type"
+msgstr "Elige tipo de cuerpo"
+
+#: src/app/components/babes/tabs/tab-body.tsx:267
+msgid "Choose Breast Size"
+msgstr "Elige tamaño de senos"
+
+#: src/app/components/babes/tabs/tab-body.tsx:319
+msgid "Choose Butt Size"
+msgstr "Elige tamaño de trasero"
+
+#: src/app/components/babes/tabs/tab-ethnicity.tsx:99
+msgid "Choose Ethnicity"
+msgstr "Elige etnicidad"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:321
+msgid "Choose Eye Color"
+msgstr "Elige color de ojos"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:272
+msgid "Choose Hair Color"
+msgstr "Elige color de cabello"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:227
+msgid "Choose Hair Style"
+msgstr "Elige peinado"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:117
+msgid "Choose Hobbies"
+msgstr "Elige pasatiempos"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:73
+msgid "Choose Occupation"
+msgstr "Elige ocupación"
+
+#: src/app/components/babes/tabs/tab-personality.tsx:109
+msgid "Choose Personality"
+msgstr "Elige personalidad"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:122
+msgid "Choose Race"
+msgstr "Elige la raza"
+
+#: src/app/components/babes/tabs/tab-relationship.tsx:70
+msgid "Choose Relationship"
+msgstr "Elige relación"
+
+#: src/app/components/babes/tabs/tab-body.tsx:369
+msgid "Choose Special Features (optional)"
+msgstr "Elige características especiales (opcional)"
+
+#: src/app/[locale]/(authenticated)/subscription/subscription-desktop.tsx:31
+msgid "Choose your plan"
+msgstr "Elige tu plan"
+
+#: src/app/components/profile/v2/earn-tokens-card.tsx:116
+msgid "Claim"
+msgstr "Reclamar"
+
+#: src/app/components/profile/v2/earn-tokens-card.tsx:114
+msgid "Claimed"
+msgstr "Reclamado"
+
+#: src/app/components/babes/tabs/tab-relationship.tsx:33
+msgid "Colleague"
+msgstr "Colega"
+
+#. placeholder {0}: resetsAtToLocaleString(freemiumResetsAt)
+#: src/app/components/messages/chat.tsx:307
+msgid ""
+"Come back at {0} or upgrade to premium for unlimited access - no waiting, no"
+" limits just unlimited fun."
+msgstr ""
+"Vuelve a las {0} o mejora a premium para acceso ilimitado: sin esperas, sin "
+"límites, solo diversión ilimitada."
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens-desktop.tsx:31
+msgid "Complete the challenges and earn free tokens that never expire!"
+msgstr "¡Completa los desafíos y gana tokens gratis que nunca expiran!"
+
+#: src/app/components/explore/footer.tsx:149
+#: src/app/[locale]/(authenticated)/profile/tabs.tsx:23
+msgid "Contact"
+msgstr "Contacto"
+
+#: src/app/[locale]/(authenticated)/profile/contact.tsx:44
+msgid "Contact our support team!"
+msgstr "¡Contacta a nuestro equipo de soporte!"
+
+#: src/app/[locale]/declined/page.tsx:73
+msgid "Contact support"
+msgstr "Contactar soporte"
+
+#: src/app/[locale]/(authenticated)/profile/contact.tsx:45
+msgid "Contact us"
+msgstr "Contáctanos"
+
+#: src/app/components/explore/footer.tsx:104
+msgid "Content Removal Policy"
+msgstr "Política de eliminación de contenido"
+
+#: src/app/components/dialog/cancel/delete-account.tsx:75
+#: src/app/components/dialog/cancel/delete-account.tsx:98
+#: src/app/components/dialog/cancel/cancel-subscription.tsx:75
+#: src/app/components/dialog/cancel/cancel-subscription.tsx:98
+msgid "Continue"
+msgstr "Continuar"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:52
+msgid "Cooking"
+msgstr "Cocina"
+
+#: src/app/components/generator/templates.tsx:79
+#: src/app/components/babes/tabs/tab-occupation.tsx:37
+msgid "Cosplay"
+msgstr "Cosplay"
+
+#: src/app/components/generator/presets.tsx:70
+msgid "Cosplay "
+msgstr "Cosplay"
+
+#: src/app/components/banner/subscription-benefits.tsx:71
+#: src/app/components/banner/subscription-benefits.tsx:76
+msgid "Create as many babes as you want"
+msgstr "Crea tantas babes como quieras"
+
+#: src/app/components/layout/desktop-nav-links.tsx:41
+msgid "Create Character"
+msgstr "Crear personaje"
+
+#: src/app/[locale]/babes/create/creator-tabs.tsx:251
+msgid "Create for FREE"
+msgstr "Crea GRATIS"
+
+#: src/app/components/dialog/auth/sign-up.tsx:145
+msgid "Create free account"
+msgstr "Crear cuenta gratis"
+
+#: src/app/components/dialog/auth/sign-up.tsx:121
+msgid "Create Free Account"
+msgstr "Crear cuenta gratis"
+
+#: src/app/[locale]/babes/new-babe-button.tsx:27
+msgid "Create new AI Babe"
+msgstr "Crear nueva Babe de IA"
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens.tsx:162
+msgid ""
+"Create unique social media posts about MyBabes.AI and share it to public."
+msgstr ""
+"Crea publicaciones únicas en redes sociales sobre MyBabes.AI y compártelas "
+"públicamente."
+
+#: src/app/components/banner/subscription-benefits.tsx:40
+#: src/app/components/banner/subscription-benefits.tsx:47
+#: src/app/components/banner/subscription-benefits.tsx:63
+msgid "Create Unlimited AI Babes"
+msgstr "Crea babes AI ilimitadas"
+
+#: src/app/components/banner/subscription-benefits.tsx:69
+msgid "Create your own AI babes"
+msgstr "Crea tus propias babes de IA"
+
+#: src/app/components/banner/signup-benefits.tsx:49
+msgid "Create your own babe"
+msgstr "Crea tu propia babe"
+
+#: src/app/[locale]/babes/queue/page.tsx:28
+msgid "Creating your AI Babe"
+msgstr "Creando tu Babe de IA"
+
+#: src/app/components/generator/presets.tsx:50
+msgid "Croptop "
+msgstr "Top corto"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:37
+#: src/app/components/babes/tabs/tab-hair.tsx:67
+msgid "Curly"
+msgstr "Rizado"
+
+#: src/app/components/babes/tabs/tab-body.tsx:38
+#: src/app/components/babes/tabs/tab-body.tsx:60
+msgid "Curvy"
+msgstr "Curvilínea"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:91
+msgid "Cyborg"
+msgstr "Cyborg"
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens.tsx:98
+msgid "Daily Check-In"
+msgstr "Registro diario"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:45
+msgid "Dancing"
+msgstr "Baile"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:55
+msgid "Dark Elf"
+msgstr "Elfo oscuro"
+
+#: src/app/components/generator/presets.tsx:119
+msgid "Dark valley"
+msgstr "Valle oscuro"
+
+#: src/app/components/babes/custom-chatbot-delete-dialog.tsx:71
+msgid "Delete"
+msgstr "Eliminar"
+
+#: src/app/components/dialog/cancel/delete-account.tsx:120
+#: src/app/components/dialog/cancel/cancel-discount.tsx:130
+msgid "Delete account"
+msgstr "Eliminar cuenta"
+
+#: src/app/components/dialog/cancel/cancel-discount.tsx:80
+msgid "Delete Account"
+msgstr "Eliminar cuenta"
+
+#: src/app/components/messages/suggestions.tsx:9
+msgid "Describe how you would have your way with me"
+msgstr "Describe cómo te gustaría tenerme"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:49
+msgid "Digital Art"
+msgstr "Arte digital"
+
+#: src/app/components/layout/desktop-nav-links.tsx:74
+msgid "Discord"
+msgstr "Discord"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:27
+msgid "DJ"
+msgstr "DJ"
+
+#: src/app/components/messages/suggestions.tsx:17
+msgid "Do you have a dirty secret?"
+msgstr "¿Tienes un secreto sucio?"
+
+#: src/app/components/messages/suggestions.tsx:11
+msgid "Do you love being in control?"
+msgstr "¿Te encanta tener el control?"
+
+#: src/app/components/messages/suggestions.tsx:16
+msgid "Do you prefer rough or gentle love?"
+msgstr "¿Prefieres el amor rudo o tierno?"
+
+#: src/app/components/banner/unblur-reels.tsx:24
+msgid "Do you want to unlock NSWF reels?"
+msgstr "¿Quieres desbloquear los reels NSFW?"
+
+#: src/app/components/banner/signup-benefits.tsx:26
+msgid "Do you want to unlock unlimited reels and much more?"
+msgstr "¿Quieres desbloquear reels ilimitados y mucho más?"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:15
+msgid "Doctor"
+msgstr "Doctor"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:22
+msgid "Domina"
+msgstr "Domina"
+
+#: src/app/components/babes/tabs/tab-personality.tsx:37
+msgid "Dominant"
+msgstr "Dominante"
+
+#: src/app/components/dialog/auth/login.tsx:191
+msgid "Don't have an account? <0>Sign up!</0>"
+msgstr "¿No tienes una cuenta? <0>¡Regístrate!</0>"
+
+#: src/app/components/dialog/unlock.tsx:63
+msgid "Don't show this again"
+msgstr "No mostrar esto de nuevo"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:71
+msgid "Dragon Queen"
+msgstr "Reina dragón"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:43
+msgid "Dryad"
+msgstr "Dríade"
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens-desktop.tsx:27
+msgid "Earn Free Tokens"
+msgstr "Gana tokens gratis"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:19
+msgid "Elf"
+msgstr "Elfo"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:75
+msgid "Elf Priestess"
+msgstr "Sacerdotisa elfa"
+
+#: src/app/components/dialog/auth/credentials-input.tsx:32
+#: src/app/[locale]/(authenticated)/profile/settings.tsx:93
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: src/app/components/dialog/auth/sign-up.tsx:83
+msgid "Email already in use. Try logging in."
+msgstr "Correo ya en uso. Intenta iniciar sesión."
+
+#: src/app/components/dialog/auth/sign-up.tsx:68
+#: src/app/components/dialog/auth/login.tsx:84
+msgid "Email and password cannot be empty"
+msgstr "El correo y la contraseña no pueden estar vacíos"
+
+#: src/app/components/layout/header/language-picker.tsx:25
+msgid "English"
+msgstr "Inglés"
+
+#: src/app/components/banner/subscription-benefits.tsx:50
+#: src/app/components/banner/subscription-benefits.tsx:64
+#: src/app/components/banner/subscription-benefits.tsx:79
+#: src/app/components/banner/subscription-benefits.tsx:88
+msgid "Enjoy Unlimited Chat"
+msgstr "Disfruta de chats ilimitados"
+
+#: src/app/components/dialog/auth/sign-up.tsx:72
+#: src/app/components/dialog/auth/login.tsx:88
+msgid "Enter valid email"
+msgstr "Introduce un correo válido"
+
+#: src/app/[locale]/babes/[chatbotID]/renameDialog.tsx:64
+msgid "Error"
+msgstr "Error"
+
+#: src/app/components/notifications/generator-notifications.tsx:36
+msgid "Estimated time: "
+msgstr "Tiempo estimado:"
+
+#: src/app/components/gallery/queued-image.tsx:26
+msgid "Estimated wait time:"
+msgstr "Tiempo de espera estimado:"
+
+#. placeholder {0}: eta ? formatToTime(eta) : "unknown"
+#: src/app/[locale]/generator/queue/queue.tsx:105
+msgid "Estimated wait time: {0}"
+msgstr "Tiempo de espera estimado: {0}"
+
+#: src/app/[locale]/babes/[chatbotID]/page.tsx:84
+msgid "Ethnicity"
+msgstr "Etnicidad"
+
+#: src/app/components/layout/mobile-nav-links.tsx:19
+#: src/app/components/layout/desktop-nav-links.tsx:29
+#: src/app/components/explore/footer.tsx:56
+msgid "Explore"
+msgstr "Explorar"
+
+#: src/app/[locale]/(explore)/page.tsx:55
+msgid "Explore <0>AI Babes</0>"
+msgstr "Explora <0>AI Babes</0>"
+
+#: src/app/[locale]/thanks/thanks.tsx:60
+#: src/app/[locale]/generator/queue/queue.tsx:131
+msgid "Explore babes"
+msgstr "Explorar babes"
+
+#: src/app/[locale]/(authenticated)/messages/no-messages.tsx:25
+msgid "Explore Babes"
+msgstr "Explorar Babes"
+
+#: src/app/[locale]/babes/[chatbotID]/page.tsx:109
+msgid "Eyes"
+msgstr "Ojos"
+
+#: src/app/components/dialog/cancel/cancel-discount.tsx:69
+msgid "Failed to delete account. Please contact support."
+msgstr "Error al eliminar la cuenta. Por favor, contacta con soporte."
+
+#: src/app/[locale]/generator/page.tsx:14
+msgid "Failed to fetch chatbots"
+msgstr "Error al obtener chatbots"
+
+#: src/app/[locale]/(authenticated)/messages/page.tsx:25
+msgid "Failed to fetch conversations"
+msgstr "Error al obtener conversaciones"
+
+#: src/app/[locale]/(authenticated)/gallery/page.tsx:24
+msgid "Failed to fetch gallery"
+msgstr "Error al obtener la galería"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:63
+msgid "Fairy"
+msgstr "Hada"
+
+#: src/app/components/babes/tabs/tab-style.tsx:30
+msgid "Fantasy"
+msgstr "Fantasía"
+
+#: src/app/components/banner/subscription-benefits.tsx:70
+msgid "Faster chat"
+msgstr "Chat más rápido"
+
+#: src/app/components/explore/footer.tsx:45
+msgid "Features"
+msgstr "Funciones"
+
+#: src/app/components/generator/templates.tsx:73
+msgid "Feets"
+msgstr "Pies"
+
+#: src/app/components/messages/suggestions.tsx:28
+msgid "Finger yourself"
+msgstr "Tócate"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:53
+msgid "Fishing"
+msgstr "Pesca"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:51
+msgid "Fitness"
+msgstr "Fitness"
+
+#: src/app/components/babes/tabs/tab-personality.tsx:67
+msgid "Flirty"
+msgstr "Coqueta"
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens.tsx:138
+msgid "Follow us on Instagram"
+msgstr "Síguenos en Instagram"
+
+#: src/app/components/generator/presets.tsx:124
+msgid "Forest"
+msgstr "Bosque"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:79
+msgid "Forest Nymph"
+msgstr "Ninfa del bosque"
+
+#: src/app/components/dialog/auth/login.tsx:159
+msgid "Forgot password?"
+msgstr "¿Olvidaste tu contraseña?"
+
+#: src/app/components/babes/tabs/tab-body.tsx:183
+msgid "Freckles"
+msgstr "Pecas"
+
+#: src/app/components/profile/current-plan.tsx:27
+msgid "Free"
+msgstr "Gratis"
+
+#: src/app/[locale]/(authenticated)/subscription/tabs.tsx:26
+msgid "Free Tokens"
+msgstr "Tokens gratis"
+
+#: src/app/components/notifications/generator-notifications.tsx:105
+msgid "Free users can only generate one image at a time"
+msgstr "Los usuarios gratuitos solo pueden generar una imagen a la vez"
+
+#: src/app/components/layout/header/language-picker.tsx:37
+msgid "French"
+msgstr "Francés"
+
+#: src/app/components/babes/tabs/tab-relationship.tsx:54
+msgid "Friend"
+msgstr "Amigo"
+
+#: src/app/components/layout/desktop-nav-links.tsx:59
+#: src/app/components/explore/footer.tsx:71
+msgid "Gallery"
+msgstr "Galería"
+
+#: src/app/components/generator/templates.tsx:37
+msgid "Gangbang"
+msgstr "Gangbang"
+
+#: src/app/components/layout/mobile-nav-links.tsx:43
+#: src/app/components/layout/desktop-nav-links.tsx:47
+#: src/app/components/babes/custom-character-card-actions.tsx:44
+#: src/app/components/actions/generate.tsx:25
+msgid "Generate"
+msgstr "Generar"
+
+#: src/app/components/banner/subscription-benefits.tsx:42
+#: src/app/components/banner/signup-benefits.tsx:41
+msgid "Generate AI NSFW pictures"
+msgstr "Generar imágenes NSFW con IA"
+
+#: src/app/[locale]/(authenticated)/gallery/empty-gallery.tsx:28
+msgid "Generate Images"
+msgstr "Generar Imágenes"
+
+#: src/app/components/banner/subscription-benefits.tsx:55
+msgid "Generate naked pictures without waiting"
+msgstr "Genera imágenes desnudas sin esperar"
+
+#: src/app/components/banner/subscription-benefits.tsx:51
+msgid "Generate Up to 500 Images"
+msgstr "Genera hasta 500 imágenes"
+
+#: src/app/components/banner/subscription-benefits.tsx:65
+#: src/app/components/banner/subscription-benefits.tsx:77
+#: src/app/components/banner/subscription-benefits.tsx:86
+msgid "Generate Up to 500 Images Monthly"
+msgstr "Genera hasta 500 imágenes al mes"
+
+#: src/app/[locale]/(authenticated)/gallery/gallery-tabs.tsx:18
+msgid "Generated"
+msgstr "Generado"
+
+#: src/app/components/gallery/queued-image.tsx:23
+msgid "Generating..."
+msgstr "Generando..."
+
+#: src/app/components/notifications/generator-notifications.tsx:37
+#: src/app/components/notifications/generator-notifications.tsx:38
+msgid "Generation in progress"
+msgstr "Generación en progreso"
+
+#: src/app/components/layout/header/language-picker.tsx:29
+msgid "German"
+msgstr "Alemán"
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens.tsx:100
+msgid "Get 10 free tokens just by opening the app daily."
+msgstr "Obtén 10 tokens gratis solo por abrir la app diariamente."
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens.tsx:139
+msgid "Get 5 free tokens by following our Instagram."
+msgstr "Obtén 5 tokens gratis siguiendo nuestro Instagram."
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens.tsx:126
+msgid "Get 5 free tokens by joining our discord server."
+msgstr "Obtén 5 tokens gratis uniéndote a nuestro servidor de Discord."
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens.tsx:113
+msgid "Get 5 free tokens by joining our subreddit."
+msgstr "Obtén 5 tokens gratis uniéndote a nuestro subreddit."
+
+#: src/app/components/dialog/cancel/cancel-discount.tsx:107
+msgid "Get 60% off for your next month!"
+msgstr "¡Obtén un 60% de descuento para tu próximo mes!"
+
+#: src/app/components/dialog/cancel/cancel-discount.tsx:118
+msgid "Get discount!"
+msgstr "¡Obtener descuento!"
+
+#: src/app/[locale]/(authenticated)/subscription/subscription-mobile.tsx:42
+#: src/app/[locale]/(authenticated)/subscription/subscription-desktop.tsx:34
+msgid "Get the best value—full premium features plus daily bonus tokens!"
+msgstr ""
+"¡Consigue el mejor valor—todas las funciones premium más tokens de "
+"bonificación diarios!"
+
+#: src/app/components/dialog/token-pricing.tsx:47
+#: src/app/[locale]/(authenticated)/subscription/get-tokens-mobile.tsx:35
+#: src/app/[locale]/(authenticated)/subscription/get-tokens-desktop.tsx:32
+msgid "Get tokens"
+msgstr "Obtener tokens"
+
+#: src/app/components/messages/chatbot-message.tsx:58
+msgid "Getting ready"
+msgstr "Preparándose"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:87
+msgid "Ghost"
+msgstr "Fantasma"
+
+#: src/app/components/babes/tabs/tab-relationship.tsx:17
+msgid "Girlfriend"
+msgstr "Novia"
+
+#: src/app/components/generator/templates.tsx:95
+#: src/app/components/generator/presets.tsx:13
+msgid "Glasses"
+msgstr "Gafas"
+
+#: src/app/[locale]/not-found.tsx:27
+msgid "Go Back"
+msgstr "Volver"
+
+#: src/app/components/dialog/cancel/delete-account.tsx:53
+#: src/app/components/dialog/cancel/delete-account.tsx:91
+#: src/app/components/dialog/cancel/cancel-subscription.tsx:53
+#: src/app/components/dialog/cancel/cancel-subscription.tsx:91
+#: src/app/components/dialog/cancel/cancel-reasons.tsx:127
+msgid "Go Back to settings"
+msgstr "Volver a configuración"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:167
+#: src/app/components/babes/tabs/tab-hair.tsx:185
+msgid "Green Eyes"
+msgstr "Ojos verdes"
+
+#: src/app/[locale]/babes/[chatbotID]/page.tsx:121
+msgid "Hair Color"
+msgstr "Color de cabello"
+
+#: src/app/[locale]/babes/[chatbotID]/page.tsx:116
+msgid "Hair Style"
+msgstr "Estilo de cabello"
+
+#: src/app/components/generator/templates.tsx:100
+#: src/app/components/generator/presets.tsx:18
+msgid "Handcuffs"
+msgstr "Esposas"
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens.tsx:151
+msgid "Help us improve the app and you'll be rewarded by 20 free tokens."
+msgstr ""
+"Ayúdanos a mejorar la app y recibirás 20 tokens gratis como recompensa."
+
+#: src/app/components/dialog/app-rating.tsx:106
+msgid "Help us improve! Rate the app."
+msgstr "¡Ayúdanos a mejorar! Califica la app."
+
+#: src/app/components/generator/quality-toggle.tsx:54
+msgid "High"
+msgstr "Alto"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:38
+msgid "Hiking"
+msgstr "Senderismo"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:28
+msgid "Housewife"
+msgstr "Ama de casa"
+
+#: src/app/components/messages/user-info.tsx:56
+msgid "How should your babes call you?"
+msgstr "¿Cómo deberían llamarte tus babes?"
+
+#: src/app/components/babes/tabs/tab-body.tsx:91
+#: src/app/components/babes/tabs/tab-body.tsx:113
+#: src/app/components/babes/tabs/tab-body.tsx:144
+#: src/app/components/babes/tabs/tab-body.tsx:166
+msgid "Huge"
+msgstr "Enorme"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:103
+msgid "Human"
+msgstr "Humano"
+
+#: src/app/components/messages/chatbot-message.tsx:70
+msgid "I am sorry babe I can't send you this one"
+msgstr "Lo siento babe, no puedo enviarte esta"
+
+#: src/app/components/dialog/cancel/cancel-reasons.tsx:109
+msgid "I don't like the pictures."
+msgstr "No me gustan las imágenes."
+
+#: src/app/components/messages/suggestions.tsx:25
+msgid "I wanna play with your boobs."
+msgstr "Quiero jugar con tus senos."
+
+#: src/app/components/messages/suggestions.tsx:39
+msgid "I wanna see your peach"
+msgstr "Quiero ver tu durazno"
+
+#: src/app/components/dialog/cancel/cancel-reasons.tsx:97
+msgid "I’m not using this app."
+msgstr "No estoy usando esta app."
+
+#: src/app/components/dialog/validate-email.tsx:69
+msgid "If you don’t see it. Check your SPAM folder."
+msgstr "Si no lo ves, revisa tu carpeta de SPAM."
+
+#: src/app/components/generator/generator-actions.tsx:134
+msgid "Image generation prompt"
+msgstr "Indicación para generación de imágenes"
+
+#. placeholder {0}: resetsAtToLocaleString(imageFreemiumResetsAt)
+#: src/app/components/messages/chat.tsx:342
+msgid ""
+"Image generation will be available again at {0}. Meanwhile you can continue "
+"chatting or upgrade to premium."
+msgstr ""
+"La generación de imágenes estará disponible nuevamente a las {0}. Mientras "
+"tanto, puedes seguir chateando o mejorar a premium."
+
+#: src/app/[locale]/generator/queue/queue.tsx:116
+msgid ""
+"In the meantime you can chat with AI babes. Upgrade to Premium to skip queue"
+" and finish the generation process sooner."
+msgstr ""
+"Mientras tanto, puedes chatear con babes de IA. Mejora a Premium para saltar"
+" la cola y finalizar el proceso de generación más rápido."
+
+#: src/app/[locale]/generator/queue/queue.tsx:104
+msgid "In the queue.."
+msgstr "En la cola..."
+
+#: src/app/[locale]/declined/page.tsx:48
+msgid "Incorrect card details (e.g., card number, expiration date, CVV)."
+msgstr ""
+"Detalles de tarjeta incorrectos (ej. número de tarjeta, fecha de "
+"vencimiento, CVV)."
+
+#: src/app/components/babes/tabs/tab-ethnicity.tsx:33
+#: src/app/components/babes/tabs/tab-ethnicity.tsx:63
+msgid "Indian"
+msgstr "India"
+
+#: src/app/[locale]/declined/page.tsx:53
+msgid "Insufficient funds in your account."
+msgstr "Fondos insuficientes en tu cuenta."
+
+#: src/app/components/dialog/auth/login.tsx:62
+msgid "Invalid email or password"
+msgstr "Correo electrónico o contraseña inválidos"
+
+#: src/app/components/dialog/app-rating.tsx:110
+msgid "Is there enough content?"
+msgstr "¿Hay suficiente contenido?"
+
+#: src/app/components/dialog/unlock.tsx:53
+msgid "It will cost: "
+msgstr "Costará:"
+
+#: src/app/components/layout/header/language-picker.tsx:41
+msgid "Italian"
+msgstr "Italiano"
+
+#: src/app/[locale]/(authenticated)/profile/contact.tsx:40
+msgid "Join discord"
+msgstr "Únete a Discord"
+
+#: src/app/components/actions/signup-button.tsx:22
+msgid "Join free"
+msgstr "Únete gratis"
+
+#: src/app/[locale]/(authenticated)/profile/contact.tsx:39
+msgid "Join our community on discord!"
+msgstr "¡Únete a nuestra comunidad en Discord!"
+
+#: src/app/components/dialog/auth/header-image.tsx:14
+msgid "Join our community."
+msgstr "Únete a nuestra comunidad."
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens.tsx:124
+msgid "Join our discord"
+msgstr "Únete a nuestro Discord"
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens.tsx:112
+msgid "Join our reddit"
+msgstr "Únete a nuestro Reddit"
+
+#: src/app/components/generator/presets.tsx:82
+msgid "Kneeling"
+msgstr "Arrodillado"
+
+#: src/app/components/babes/tabs/tab-body.tsx:87
+#: src/app/components/babes/tabs/tab-body.tsx:109
+#: src/app/components/babes/tabs/tab-body.tsx:140
+#: src/app/components/babes/tabs/tab-body.tsx:162
+msgid "Large"
+msgstr "Grande"
+
+#: src/app/components/generator/presets.tsx:45
+msgid "Latex "
+msgstr "Látex"
+
+#: src/app/components/babes/tabs/tab-ethnicity.tsx:41
+#: src/app/components/babes/tabs/tab-ethnicity.tsx:71
+msgid "Latina"
+msgstr "Latina"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:24
+msgid "Lawyer"
+msgstr "Abogado"
+
+#: src/app/components/generator/presets.tsx:87
+msgid "Laying"
+msgstr "Acostado"
+
+#: src/app/components/explore/footer.tsx:78
+msgid "Legal docs"
+msgstr "Documentos legales"
+
+#: src/app/components/messages/suggestions.tsx:24
+msgid "Let me see your tits."
+msgstr "Déjame ver tus tetas."
+
+#: src/app/components/generator/presets.tsx:139
+msgid "Library"
+msgstr "Biblioteca"
+
+#: src/app/[locale]/(authenticated)/gallery/gallery-tabs.tsx:22
+msgid "Liked"
+msgstr "Me gusta"
+
+#: src/app/[locale]/character/[chatbotID]/character.tsx:63
+msgid "likes"
+msgstr "me gusta"
+
+#: src/app/components/banner/subscription-benefits.tsx:60
+msgid "Limited offer with <0>60% discount</0>"
+msgstr "Oferta limitada con <0>60% de descuento</0>"
+
+#: src/app/components/posts/posts.tsx:68
+#: src/app/components/posts/reels/posts.tsx:109
+msgid "Loading..."
+msgstr "Cargando..."
+
+#: src/app/components/dialog/auth/login.tsx:123
+#: src/app/components/dialog/auth/login.tsx:148
+msgid "Log In"
+msgstr "Iniciar sesión"
+
+#: src/app/components/layout/header/menu.tsx:111
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: src/app/components/babes/tabs/tab-personality.tsx:77
+msgid "Lover"
+msgstr "Amante"
+
+#: src/app/components/generator/quality-toggle.tsx:43
+msgid "Low"
+msgstr "Bajo"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:31
+msgid "Mage"
+msgstr "Mago"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:39
+msgid "Manga"
+msgstr "Manga"
+
+#: src/app/components/babes/tabs/tab-personality.tsx:27
+msgid "Mean"
+msgstr "Mala"
+
+#: src/app/components/babes/tabs/tab-body.tsx:83
+#: src/app/components/babes/tabs/tab-body.tsx:105
+#: src/app/components/babes/tabs/tab-body.tsx:136
+#: src/app/components/babes/tabs/tab-body.tsx:158
+msgid "Medium"
+msgstr "Mediano"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:47
+msgid "Memes"
+msgstr "Memes"
+
+#: src/app/components/profile/subscription-footer.tsx:65
+#: src/app/components/explore/footer.tsx:152
+msgid ""
+"Memora AI s.r.o., Limited, Nr.CZ21595411, Písečná 451/6, Troja (Prague 8), "
+"182 00 Prague, Czech republic"
+msgstr ""
+"Memora AI s.r.o., Limited, Nr.CZ21595411, Písečná 451/6, Troja (Praga 8), "
+"182 00 Praga, República Checa"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:95
+msgid "Mermaid"
+msgstr "Sirena"
+
+#: src/app/components/babes/tabs/tab-relationship.tsx:46
+msgid "Mistress"
+msgstr "Ama"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:20
+msgid "Model"
+msgstr "Modelo"
+
+#: src/app/components/profile/current-plan.tsx:34
+msgid "month"
+msgstr "mes"
+
+#: src/app/components/profile/subscription-card.tsx:69
+msgid "monthly"
+msgstr "mensual"
+
+#: src/app/components/banner/subscription-benefits.tsx:43
+msgid "More chat with AI babes"
+msgstr "Más chat con babes de IA"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:50
+msgid "Movies"
+msgstr "Películas"
+
+#: src/app/components/layout/desktop-nav-links.tsx:65
+msgid "My Babes"
+msgstr "Mis Babes"
+
+#: src/app/components/explore/footer.tsx:113
+msgid ""
+"MyBabes.ai is an innovative AI-powered platform that brings storytelling, "
+"roleplaying, and engaging conversations to life."
+msgstr ""
+"MyBabes.ai es una plataforma innovadora impulsada por IA que da vida a "
+"historias, juegos de rol y conversaciones interactivas."
+
+#: src/app/[locale]/declined/page.tsx:59
+msgid "Network or technical issue."
+msgstr "Problema de red o técnico."
+
+#: src/app/components/gallery/gallery-preview.tsx:75
+msgid "New"
+msgstr "Nuevo"
+
+#: src/app/[locale]/babes/create/creator-tabs.tsx:213
+msgid "Next"
+msgstr "Siguiente"
+
+#: src/app/components/profile/subscription-footer.tsx:27
+msgid "No adults transaction in your bank statement"
+msgstr "No aparecerá ninguna transacción para adultos en tu estado de cuenta"
+
+#: src/app/[locale]/(authenticated)/messages/page.tsx:86
+msgid "No conversations yet"
+msgstr "Aún no hay conversaciones"
+
+#: src/app/components/profile/subscription-footer.tsx:14
+msgid "No hidden fees & Cancel subscription at any time"
+msgstr "Sin tarifas ocultas y cancela tu suscripción en cualquier momento"
+
+#: src/app/components/posts/posts.tsx:11
+#: src/app/[locale]/character/[chatbotID]/posts/post-list.tsx:34
+msgid "No posts available yet."
+msgstr "Aún no hay publicaciones disponibles."
+
+#: src/app/[locale]/character/[chatbotID]/posts/character-post-grid.tsx:21
+msgid "No posts yet."
+msgstr "Aún no hay publicaciones."
+
+#: src/app/components/banner/subscription-benefits.tsx:68
+msgid "No queue in picture generator"
+msgstr "Sin colas en el generador de imágenes"
+
+#: src/app/components/dialog/cancel/cancel-reasons.tsx:91
+msgid "Not enough babes here."
+msgstr "No hay suficientes babes aquí."
+
+#: src/app/[locale]/character/[chatbotID]/character.tsx:78
+msgid "NSFW"
+msgstr "NSFW"
+
+#: src/app/components/generator/generator-actions.tsx:180
+msgid "Number of images"
+msgstr "Número de imágenes"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:18
+msgid "Nurse"
+msgstr "Enfermera"
+
+#: src/app/components/generator/presets.tsx:65
+msgid "Nurse "
+msgstr "Enfermera"
+
+#: src/app/components/babes/tabs/tab-personality.tsx:87
+msgid "Nympho"
+msgstr "Ninfómana"
+
+#: src/app/components/generator/presets.tsx:129
+msgid "Office"
+msgstr "Oficina"
+
+#: src/app/components/profile/v2/one-time-payment-card.tsx:72
+msgid "one-time payment"
+msgstr "pago único"
+
+#: src/app/components/banner/subscription-benefits.tsx:57
+msgid "Open storytelling"
+msgstr "Abrir narraciones"
+
+#: src/app/components/dialog/auth/sign-up.tsx:151
+#: src/app/components/dialog/auth/login.tsx:184
+msgid "Or continue with"
+msgstr "O continuar con"
+
+#: src/app/[locale]/declined/page.tsx:78
+msgid "Or you can  <0>contact us on discord.</0>"
+msgstr "O puedes <0>contactarnos en Discord.</0>"
+
+#: src/app/components/generator/templates.tsx:20
+msgid "Oral"
+msgstr "Oral"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:27
+msgid "Orc"
+msgstr "Orco"
+
+#: src/app/components/dialog/cancel/cancel-reasons.tsx:116
+msgid "Other (please tell us more)"
+msgstr "Otro (por favor, cuéntanos más)"
+
+#: src/app/components/messages/chat.tsx:257
+msgid "Our Chat Is Overloaded - Thanks for Waiting!"
+msgstr "Nuestro chat está sobrecargado: ¡gracias por esperar!"
+
+#: src/app/components/generator/preset-tabs.tsx:10
+msgid "Outfit"
+msgstr "Conjunto"
+
+#: src/app/components/dialog/cancel/delete-account.tsx:32
+#: src/app/components/dialog/cancel/cancel-subscription.tsx:32
+#: src/app/components/dialog/auth/credentials-input.tsx:47
+msgid "Password"
+msgstr "Contraseña"
+
+#: src/app/components/dialog/cancel/delete-account.tsx:70
+#: src/app/components/dialog/cancel/cancel-subscription.tsx:70
+msgid "Passwords do not match"
+msgstr "Las contraseñas no coinciden"
+
+#: src/app/components/actions/truevo/buy-subscription.tsx:101
+#: src/app/components/actions/truevo/buy-addons.tsx:91
+msgid "Pay with Credit / Debit Card"
+msgstr "Pagar con Tarjeta de Crédito / Débito"
+
+#: src/app/components/profile/subscription-card.tsx:75
+#: src/app/components/profile/v2/subscription-card.tsx:63
+msgid "per month"
+msgstr "por mes"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:43
+msgid "Photography"
+msgstr "Fotografía"
+
+#: src/app/components/generator/templates.tsx:105
+#: src/app/components/generator/presets.tsx:23
+msgid "Piercing"
+msgstr "Piercing"
+
+#: src/app/components/babes/tabs/tab-body.tsx:182
+msgid "Piercings"
+msgstr "Piercings"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:102
+#: src/app/components/babes/tabs/tab-hair.tsx:132
+msgid "Pink Hair"
+msgstr "Cabello rosa"
+
+#: src/app/components/generator/templates.tsx:43
+msgid "Pissing"
+msgstr "Orinar"
+
+#: src/app/components/actions/truevo/buy-subscription.tsx:103
+msgid "Plan upgrade is not supported"
+msgstr "La mejora del plan no es compatible"
+
+#: src/app/components/messages/suggestions.tsx:30
+msgid "Play with yourself!"
+msgstr "¡Juega contigo mismo!"
+
+#: src/app/components/dialog/validate-email.tsx:61
+msgid "Please confirm your email"
+msgstr "Por favor confirma tu correo electrónico"
+
+#: src/app/components/dialog/cancel/delete-account.tsx:66
+#: src/app/components/dialog/cancel/cancel-subscription.tsx:66
+msgid "Please fill in the password fields"
+msgstr "Por favor, completa los campos de contraseña"
+
+#: src/app/components/dialog/cancel/cancel-reasons.tsx:79
+msgid "Please tell us the reason. It will help us improve our services."
+msgstr "Cuéntanos la razón. Nos ayudará a mejorar nuestros servicios."
+
+#: src/app/components/notifications/generator-notifications.tsx:76
+msgid "Please try different prompt!"
+msgstr "¡Por favor intenta con un prompt diferente!"
+
+#: src/app/components/dialog/auth/login.tsx:64
+msgid "Please verify your email"
+msgstr "Por favor verifica tu correo electrónico"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:48
+msgid "Podcasts"
+msgstr "Podcasts"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:21
+msgid "Policeman"
+msgstr "Policía"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:41
+#: src/app/components/babes/tabs/tab-hair.tsx:71
+msgid "Ponytail"
+msgstr "Cola de caballo"
+
+#: src/app/components/generator/preset-tabs.tsx:18
+msgid "Pose"
+msgstr "Posar"
+
+#: src/app/[locale]/declined/page.tsx:44
+msgid "Possible reasons:"
+msgstr "Posibles razones:"
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens.tsx:160
+msgid "Post on social media"
+msgstr "Publica en redes sociales"
+
+#: src/app/[locale]/character/[chatbotID]/character.tsx:55
+msgid "posts"
+msgstr "publicaciones"
+
+#: src/app/[locale]/(authenticated)/profile/settings.tsx:105
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: src/app/components/babes/tabs/tab-body.tsx:184
+msgid "Pregnant"
+msgstr "Embarazada"
+
+#: src/app/components/profile/current-plan.tsx:29
+msgid "Premium"
+msgstr "Premium"
+
+#: src/app/[locale]/(authenticated)/subscription/get-tokens-desktop.tsx:49
+msgid "Premium Benefits:"
+msgstr "Beneficios Premium:"
+
+#: src/app/[locale]/babes/create/creator-tabs.tsx:187
+msgid "Previous"
+msgstr "Anterior"
+
+#: src/app/components/dialog/cancel/cancel-reasons.tsx:85
+msgid "Price is too high"
+msgstr "El precio es demasiado alto"
+
+#: src/app/components/explore/footer.tsx:94
+msgid "Privacy Notice"
+msgstr "Aviso de privacidad"
+
+#: src/app/components/generator/generator-actions.tsx:73
+msgid "Prompt cannot be empty."
+msgstr "El prompt no puede estar vacío."
+
+#: src/app/components/babes/tabs/tab-body.tsx:181
+msgid "PubicHair"
+msgstr "Vello púbico"
+
+#: src/app/components/generator/presets.tsx:134
+msgid "Public transport"
+msgstr "Transporte público"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:59
+msgid "Puzzles"
+msgstr "Rompecabezas"
+
+#: src/app/components/generator/presets.tsx:55
+msgid "Pyjamas "
+msgstr "Pijamas"
+
+#: src/app/[locale]/babes/[chatbotID]/page.tsx:91
+msgid "Race"
+msgstr "Raza"
+
+#: src/app/[locale]/(authenticated)/profile/contact.tsx:64
+msgid "Read our terms and policies"
+msgstr "Lee nuestros términos y políticas"
+
+#: src/app/[locale]/(authenticated)/profile/contact.tsx:65
+msgid "Read Terms"
+msgstr "Leer términos"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:32
+msgid "Reading"
+msgstr "Lectura"
+
+#: src/app/components/layout/header/desktop-header.tsx:78
+#: src/app/components/explore/explore-tabs.tsx:18
+#: src/app/components/babes/tabs/tab-style.tsx:38
+#: src/app/[locale]/generator/generator-tabs.tsx:25
+#: src/app/[locale]/(authenticated)/profile/settings.tsx:112
+msgid "Realistic"
+msgstr "Realista"
+
+#: src/app/components/dialog/unlock.tsx:61
+msgid "Receive personal voice-messages (Coming soon)"
+msgstr "Recibe mensajes de voz personalizados (Próximamente)"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:106
+#: src/app/components/babes/tabs/tab-hair.tsx:136
+msgid "Redhead"
+msgstr "Pelirroja"
+
+#: src/app/components/layout/mobile-nav-links.tsx:25
+#: src/app/components/layout/desktop-nav-links.tsx:53
+#: src/app/components/explore/footer.tsx:61
+msgid "Reels"
+msgstr "Reels"
+
+#: src/app/components/profile/token-usage.tsx:39
+msgid "Remaining tokens"
+msgstr "Tokens restantes"
+
+#: src/app/[locale]/babes/[chatbotID]/renameDialog.tsx:109
+msgid "Rename"
+msgstr "Renombrar"
+
+#: src/app/components/messages/user-info.tsx:77
+msgid "Rename & Continue"
+msgstr "Renombrar y continuar"
+
+#: src/app/[locale]/babes/[chatbotID]/renameDialog.tsx:89
+msgid "Rename your <0> AI Babe </0>"
+msgstr "Renombra tu <0> AI Babe </0>"
+
+#: src/app/components/profile/token-usage.tsx:57
+msgid "Renews on"
+msgstr "Renueva el"
+
+#: src/app/components/dialog/cancel/delete-account.tsx:43
+#: src/app/components/dialog/cancel/cancel-subscription.tsx:43
+msgid "Repeat password"
+msgstr "Repetir contraseña"
+
+#: src/app/[locale]/(authenticated)/subscription/earn-tokens.tsx:149
+msgid "Report a bug"
+msgstr "Reportar un error"
+
+#: src/app/components/dialog/validate-email.tsx:94
+msgid "Resend email"
+msgstr "Reenviar correo electrónico"
+
+#: src/app/[locale]/(authenticated)/profile/settings.tsx:128
+msgid "Save"
+msgstr "Guardar"
+
+#: src/app/components/generator/preset-tabs.tsx:14
+msgid "Scene"
+msgstr "Escena"
+
+#: src/app/components/babes/tabs/tab-relationship.tsx:38
+msgid "School Mate"
+msgstr "Compañero de escuela"
+
+#: src/app/components/dialog/app-rating.tsx:173
+msgid "Send feedback"
+msgstr "Enviar comentarios"
+
+#: src/app/components/messages/suggestions.tsx:35
+msgid "Send me your ass"
+msgstr "Envíame tu trasero"
+
+#: src/app/components/messages/suggestions.tsx:23
+msgid "Send me your boobs"
+msgstr "Envíame tus tetas"
+
+#: src/app/components/layout/header/menu.tsx:91
+#: src/app/[locale]/(authenticated)/profile/tabs.tsx:15
+msgid "Settings"
+msgstr "Configuración"
+
+#: src/app/components/generator/templates.tsx:14
+msgid "Sex"
+msgstr "Sexo"
+
+#: src/app/components/babes/tabs/tab-relationship.tsx:21
+msgid "Sexfriend"
+msgstr "Amigo con derecho"
+
+#: src/app/components/babes/tabs/tab-personality.tsx:29
+msgid ""
+"She is cold, critical, and often dismissive, using sharp words and actions "
+"to belittle others and assert her superiority."
+msgstr ""
+"Ella es fría, crítica y a menudo desdeñosa, usando palabras y acciones "
+"cortantes para menospreciar a los demás y afirmar su superioridad."
+
+#: src/app/components/babes/tabs/tab-personality.tsx:39
+msgid ""
+"She is confident, assertive, and naturally takes charge, exuding authority "
+"and control in her actions and demeanor."
+msgstr ""
+"Ella es segura de sí misma, asertiva y naturalmente toma el control, "
+"irradiando autoridad y dominio en sus acciones y comportamiento."
+
+#: src/app/components/babes/tabs/tab-personality.tsx:49
+msgid ""
+"She is gentle, accommodating, and eager to please, finding comfort and "
+"fulfillment in yielding to the desires and guidance of others."
+msgstr ""
+"Ella es dulce, complaciente y ansiosa por agradar, encontrando consuelo y "
+"satisfacción en ceder a los deseos y guía de los demás."
+
+#: src/app/components/babes/tabs/tab-personality.tsx:69
+#: src/app/components/babes/tabs/tab-personality.tsx:79
+#: src/app/components/babes/tabs/tab-personality.tsx:89
+msgid ""
+"She is playful, outgoing, and effortlessly captivating, using teasing smiles"
+" and clever banter to draw people into her orbit."
+msgstr ""
+"Ella es juguetona, extrovertida y cautivadora sin esfuerzo, utilizando "
+"sonrisas coquetas y un ingenioso sentido del humor para atraer a la gente a "
+"su órbita."
+
+#: src/app/components/babes/tabs/tab-personality.tsx:59
+msgid ""
+"She is reserved and introverted, often blushing at attention, yet her quiet "
+"charm and vulnerability make her irresistibly endearing."
+msgstr ""
+"Ella es reservada e introvertida, a menudo sonrojándose ante la atención, "
+"pero su encanto tranquilo y vulnerabilidad la hacen irresistiblemente "
+"encantadora."
+
+#: src/app/components/babes/tabs/tab-personality.tsx:19
+msgid ""
+"She is warm, nurturing, and deeply empathetic, always attuned to the needs "
+"of others and ready to provide comfort and support."
+msgstr ""
+"Ella es cálida, cariñosa y profundamente empática, siempre atenta a las "
+"necesidades de los demás y lista para brindar consuelo y apoyo."
+
+#: src/app/components/babes/tabs/tab-hair.tsx:25
+#: src/app/components/babes/tabs/tab-hair.tsx:55
+msgid "Short"
+msgstr "Corto"
+
+#: src/app/components/messages/suggestions.tsx:33
+msgid "Show me dat ass!"
+msgstr "¡Enséñame ese culo!"
+
+#: src/app/components/messages/suggestions.tsx:20
+msgid "Show me how you'd fuck me!"
+msgstr "¡Muéstrame cómo me follarías!"
+
+#: src/app/components/messages/suggestions.tsx:38
+msgid "Show me your pussy"
+msgstr "Enséñame tu pussy"
+
+#: src/app/components/messages/suggestions.tsx:29
+msgid "Show me your secret toys!"
+msgstr "¡Muéstrame tus juguetes secretos!"
+
+#: src/app/components/babes/tabs/tab-personality.tsx:57
+msgid "Shy"
+msgstr "Tímida"
+
+#: src/app/components/dialog/auth/login.tsx:178
+msgid "Sign in"
+msgstr "Iniciar sesión"
+
+#: src/app/components/dialog/validate-email.tsx:110
+msgid "Sign in!"
+msgstr "¡Iniciar sesión!"
+
+#: src/app/components/banner/signup-benefits.tsx:57
+msgid "SIGN UP FOR FREE"
+msgstr "REGÍSTRATE GRATIS"
+
+#: src/app/components/generator/presets.tsx:92
+msgid "Sitting"
+msgstr "Sentado"
+
+#: src/app/components/banner/subscription-benefits.tsx:44
+msgid "Skip the queues"
+msgstr "Sáltate las filas"
+
+#: src/app/components/banner/subscription-benefits.tsx:56
+#: src/app/components/banner/subscription-benefits.tsx:78
+#: src/app/components/banner/subscription-benefits.tsx:87
+msgid "Skip waiting in queues"
+msgstr "Saltar la espera en las colas"
+
+#: src/app/components/babes/tabs/tab-body.tsx:26
+#: src/app/components/babes/tabs/tab-body.tsx:48
+msgid "Slim"
+msgstr "Delgada"
+
+#: src/app/components/babes/tabs/tab-body.tsx:79
+#: src/app/components/babes/tabs/tab-body.tsx:101
+#: src/app/components/babes/tabs/tab-body.tsx:132
+#: src/app/components/babes/tabs/tab-body.tsx:154
+msgid "Small"
+msgstr "Pequeño"
+
+#: src/app/components/explore/footer.tsx:123
+msgid "Social"
+msgstr "Social"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:16
+msgid "Soldier"
+msgstr "Soldado"
+
+#: src/app/components/generator/templates.tsx:67
+msgid "Solo"
+msgstr "Solo"
+
+#: src/app/[locale]/declined/page.tsx:40
+msgid "Something went wrong during the transaction."
+msgstr "Algo salió mal durante la transacción."
+
+#: src/app/components/notifications/generator-notifications.tsx:72
+#: src/app/components/notifications/generator-notifications.tsx:144
+#: src/app/components/messages/chatbot-message.tsx:68
+msgid "Something went wrong. Please try again"
+msgstr "Algo salió mal. Por favor, inténtalo de nuevo"
+
+#: src/app/components/layout/header/language-picker.tsx:33
+msgid "Spanish"
+msgstr "Español"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:58
+msgid "Sports"
+msgstr "Deportes"
+
+#: src/app/components/generator/templates.tsx:49
+msgid "Squirt"
+msgstr "Eyacular"
+
+#: src/app/components/generator/presets.tsx:97
+msgid "Standing"
+msgstr "De pie"
+
+#: src/app/components/generator/generator-actions.tsx:212
+msgid "Start generating"
+msgstr "Comenzar a generar"
+
+#: src/app/components/babes/tabs/tab-relationship.tsx:25
+msgid "Stepmom"
+msgstr "Madrastra"
+
+#: src/app/components/babes/tabs/tab-relationship.tsx:29
+msgid "Stepsister"
+msgstr "Hermanastra"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:25
+msgid "Stewardess"
+msgstr "Azafata"
+
+#: src/app/components/babes/tabs/tab-hair.tsx:21
+#: src/app/components/babes/tabs/tab-hair.tsx:51
+msgid "Straight"
+msgstr "Liso"
+
+#: src/app/components/babes/tabs/tab-relationship.tsx:50
+msgid "Stranger"
+msgstr "Desconocido"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:40
+msgid "Streaming"
+msgstr "Streaming"
+
+#: src/app/components/generator/presets.tsx:102
+msgid "Stretching"
+msgstr "Estiramiento"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:17
+msgid "Student"
+msgstr "Estudiante"
+
+#: src/app/components/babes/tabs/tab-personality.tsx:47
+msgid "Submissive"
+msgstr "Sumisa"
+
+#: src/app/components/actions/unlock-post-button.tsx:59
+#: src/app/components/actions/unlock-chatbot-button.tsx:61
+msgid "Subscribe to unlock this chatbot."
+msgstr "Suscríbete para desbloquear este chatbot."
+
+#: src/app/[locale]/(authenticated)/subscription/tabs.tsx:18
+#: src/app/[locale]/(authenticated)/profile/tabs.tsx:19
+msgid "Subscription"
+msgstr "Suscripción"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:23
+msgid "Succubus"
+msgstr "Súcubo"
+
+#: src/app/components/babes/tabs/tab-summary.tsx:106
+msgid "Summary"
+msgstr "Resumen"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:51
+msgid "Superhero"
+msgstr "Superhéroe"
+
+#: src/app/components/messages/chatbot-message.tsx:61
+msgid "Taking picture for you"
+msgstr "Tomando una foto para ti"
+
+#: src/app/components/generator/templates.tsx:110
+#: src/app/components/generator/presets.tsx:28
+#: src/app/components/babes/tabs/tab-body.tsx:180
+msgid "Tattoos"
+msgstr "Tatuajes"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:14
+msgid "Teacher"
+msgstr "Profesor"
+
+#: src/app/components/generator/template-dialog.tsx:41
+#: src/app/components/generator/generator-actions.tsx:160
+msgid "Templates"
+msgstr "Plantillas"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:35
+msgid "Tentacle Monster"
+msgstr "Monstruo tentáculo"
+
+#: src/app/components/explore/footer.tsx:89
+msgid "Terms of service"
+msgstr "Términos de servicio"
+
+#: src/app/components/posts/post-actions.tsx:62
+#: src/app/components/actions/text-me-button.tsx:36
+msgid "Text me!"
+msgstr "¡Escríbeme!"
+
+#: src/app/components/profile/v2/subscription-card.tsx:90
+msgid "The 3-month plan costs $23.97 per quarter."
+msgstr "El plan de 3 meses cuesta $23.97 por trimestre."
+
+#: src/app/[locale]/babes/[chatbotID]/renameDialog.tsx:42
+msgid "The name is too long"
+msgstr "El nombre es demasiado largo"
+
+#: src/app/[locale]/not-found.tsx:13
+msgid ""
+"The page you are looking for does not exist. Please check the URL or go "
+"back."
+msgstr "La página que buscas no existe. Por favor, revisa la URL o regresa."
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:19
+msgid "Therapist"
+msgstr "Terapeuta"
+
+#: src/app/components/babes/custom-chatbot-delete-dialog.tsx:61
+msgid ""
+"This action is not reversible. All the conversations and images will be "
+"lost."
+msgstr ""
+"Esta acción no se puede deshacer. Se perderán todas las conversaciones e "
+"imágenes."
+
+#: src/app/components/banner/subscription-benefits.tsx:32
+msgid "This babe is for premium users only! Subscribe to unlock her and more"
+msgstr ""
+"¡Esta babe es solo para usuarios premium! Suscríbete para desbloquearla y "
+"más"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:42
+msgid "TikTok"
+msgstr "TikTok"
+
+#: src/app/components/profile/subscription-footer.tsx:50
+msgid ""
+"To unlock premium features in MyBabes.ai, complete your payment on Patreon. "
+"Once subscribed, your Patreon account will sync automatically with MyBabes, "
+"giving you instant access to premium tools. You can cancel anytime, and your"
+" subscription will be removed in the app."
+msgstr ""
+"Para desbloquear funciones premium en MyBabes.ai, completa tu pago en "
+"Patreon. Una vez suscrito, tu cuenta de Patreon se sincronizará "
+"automáticamente con MyBabes, dándote acceso instantáneo a herramientas "
+"premium. Puedes cancelar en cualquier momento y tu suscripción se eliminará "
+"en la app."
+
+#: src/app/components/profile/v2/one-time-payment-card.tsx:61
+msgid "tokens"
+msgstr "tokens"
+
+#: src/app/components/banner/subscription-benefits.tsx:41
+msgid "Tokens never expires"
+msgstr "Los tokens nunca expiran"
+
+#: src/app/components/generator/templates.tsx:61
+msgid "Toys"
+msgstr "Juguetes"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:44
+msgid "Traveling"
+msgstr "Viajar"
+
+#: src/app/[locale]/declined/page.tsx:67
+msgid "Try again"
+msgstr "Intenta de nuevo"
+
+#: src/app/components/generator/generator-actions.tsx:72
+msgid "Try again!"
+msgstr "¡Intenta de nuevo!"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:35
+msgid "TV Series"
+msgstr "Series de TV"
+
+#: src/app/components/generator/templates.tsx:55
+msgid "Two girls"
+msgstr "Dos chicas"
+
+#: src/app/components/dialog/app-rating.tsx:166
+msgid "Type here"
+msgstr "Escribe aquí"
+
+#: src/app/components/generator/generator-actions.tsx:146
+msgid "Type your prompt here..."
+msgstr "Escribe tu prompt aquí..."
+
+#: src/app/components/banner/unblur-reels.tsx:31
+msgid "Unblur NOW"
+msgstr "Desbloquear AHORA"
+
+#: src/app/components/dialog/auth/login.tsx:66
+msgid "Unknown error"
+msgstr "Error desconocido"
+
+#: src/app/components/dialog/auth/sign-up.tsx:85
+msgid "Unknown error. Contact support."
+msgstr "Error desconocido. Contacta con soporte."
+
+#: src/app/components/dialog/unlock.tsx:78
+#: src/app/components/actions/unlock-post-button.tsx:33
+msgid "Unlock"
+msgstr "Desbloquear"
+
+#: src/app/components/dialog/unlock.tsx:60
+msgid "Unlock all galleries"
+msgstr "Desbloquear todas las galerías"
+
+#: src/app/components/banner/subscription-benefits.tsx:54
+#: src/app/components/banner/subscription-benefits.tsx:80
+#: src/app/components/banner/subscription-benefits.tsx:89
+msgid "Unlock ALL NSFW reels"
+msgstr "Desbloquear TODOS los reels NSFW"
+
+#: src/app/components/banner/subscription-benefits.tsx:49
+msgid "Unlock ALL NSFW Reels"
+msgstr "Desbloquea TODOS los reels NSFW"
+
+#: src/app/components/dialog/unlock.tsx:59
+msgid "Unlock all private pictures of {chatbotName}"
+msgstr "Desbloquear todas las fotos privadas de {chatbotName}"
+
+#: src/app/components/banner/subscription-benefits.tsx:83
+msgid "Unlock chat and generation with premium babes"
+msgstr "Desbloquea el chat y la generación con babes premium"
+
+#: src/app/components/banner/signup-benefits.tsx:37
+msgid "Unlock unlimited reels"
+msgstr "Desbloquear reels ilimitados"
+
+#: src/app/components/profile/v2/subscription-card.tsx:80
+msgid "Up to <0>500 Free </0>Tokens  Monthly"
+msgstr "Hasta <0>500 fichas gratis</0> al mes"
+
+#: src/app/[locale]/generator/queue/queue.tsx:139
+msgid "Upgrade"
+msgstr "Mejorar"
+
+#: src/app/components/generator/template-dialog.tsx:90
+msgid "Use template"
+msgstr "Usar plantilla"
+
+#: src/app/[locale]/(authenticated)/profile/settings.tsx:82
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:39
+msgid "Valkyrie"
+msgstr "Valquiria"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:46
+msgid "Video Games"
+msgstr "Videojuegos"
+
+#: src/app/components/notifications/generator-notifications.tsx:63
+msgid "View"
+msgstr "Ver"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:57
+msgid "Vlogging"
+msgstr "Vlogging"
+
+#: src/app/components/babes/tabs/tab-body.tsx:34
+#: src/app/components/babes/tabs/tab-body.tsx:56
+msgid "Voluptuous"
+msgstr "Voluptuosa"
+
+#: src/app/components/messages/chatbot-message.tsx:63
+msgid "Waiting in queue"
+msgstr "Esperando en la cola"
+
+#: src/app/components/banner/subscription-benefits.tsx:29
+msgid "Want to create unlimited babes and unlock exclusive perks?"
+msgstr "¿Quieres crear babes ilimitadas y desbloquear beneficios exclusivos?"
+
+#: src/app/components/dialog/become-premium.tsx:48
+msgid "Want to create unlimited babes and unlock exclusive perks? "
+msgstr "¿Quieres crear babes ilimitadas y desbloquear beneficios exclusivos?"
+
+#: src/app/components/dialog/become-premium.tsx:33
+msgid "Want to keep the conversation going and unlock even more? "
+msgstr "¿Quieres seguir la conversación y desbloquear aún más?"
+
+#: src/app/components/dialog/become-premium.tsx:39
+#: src/app/components/banner/subscription-benefits.tsx:23
+msgid ""
+"Want to skip the queue and unlock exclusive perks? Get priority access now!"
+msgstr ""
+"¿Quieres saltarte la cola y desbloquear beneficios exclusivos? ¡Obtén acceso"
+" prioritario ahora!"
+
+#: src/app/components/dialog/become-premium.tsx:53
+msgid "Want to unlock chat with premium babes?"
+msgstr "¿Quieres desbloquear el chat con babes premium?"
+
+#: src/app/components/dialog/become-premium.tsx:25
+#: src/app/components/banner/subscription-benefits.tsx:16
+msgid ""
+"Want unlimited access to all content and exclusive perks? Unlock it now!"
+msgstr ""
+"¿Quieres acceso ilimitado a todo el contenido y beneficios exclusivos? "
+"¡Desbloquéalo ahora!"
+
+#: src/app/components/profile/subscription-card.tsx:59
+msgid "Was ${originalPrice}/month"
+msgstr "Era ${originalPrice}/mes"
+
+#: src/app/components/profile/v2/subscription-card.tsx:56
+msgid "Was $19.99/month"
+msgstr "Antes $19.99/mes"
+
+#: src/app/components/dialog/app-rating.tsx:122
+msgid "Was the chat engaging?"
+msgstr "¿Te pareció interesante el chat?"
+
+#: src/app/components/messages/chat.tsx:260
+msgid ""
+"We’re seeing a lot of action right now. Premium users get instant access – "
+"no waiting & unlimited chat."
+msgstr ""
+"Estamos viendo mucha actividad en este momento. Los usuarios premium "
+"obtienen acceso instantáneo – sin esperas y con chat ilimitado."
+
+#: src/app/components/dialog/validate-email.tsx:65
+msgid "We’ve sent confirmation link to"
+msgstr "Hemos enviado un enlace de confirmación a"
+
+#: src/app/components/dialog/auth/header-image.tsx:9
+msgid "Welcome back!"
+msgstr "¡Bienvenido de nuevo!"
+
+#: src/app/components/messages/suggestions.tsx:15
+msgid "What always makes you cum"
+msgstr "¿Qué siempre te hace correrte?"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:121
+msgid "What does your girlfriend do for fun? Select up to 3 hobbies"
+msgstr ""
+"¿A qué se dedica tu novia para divertirse? Selecciona hasta 3 pasatiempos"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:77
+msgid "What does your girlfriend do for living?"
+msgstr "¿A qué se dedica tu novia?"
+
+#: src/app/components/babes/tabs/tab-relationship.tsx:76
+msgid "What is your babe’s relationship status to you?"
+msgstr "¿Cuál es la relación de tu babe contigo?"
+
+#: src/app/components/dialog/app-rating.tsx:158
+msgid "What should we improve?"
+msgstr "¿Qué deberíamos mejorar?"
+
+#: src/app/components/messages/suggestions.tsx:10
+msgid "What would you do if i was naked right now"
+msgstr "¿Qué harías si estuviera desnuda ahora mismo?"
+
+#: src/app/components/messages/suggestions.tsx:12
+msgid "What’s your secret fantasy?"
+msgstr "¿Cuál es tu fantasía secreta?"
+
+#: src/app/components/generator/templates.tsx:115
+#: src/app/components/generator/presets.tsx:33
+msgid "Whip"
+msgstr "Látigo"
+
+#: src/app/components/babes/tabs/tab-relationship.tsx:42
+msgid "Wife"
+msgstr "Esposa"
+
+#: src/app/components/babes/tabs/tab-fantasy-race.tsx:99
+msgid "Witch"
+msgstr "Bruja"
+
+#: src/app/components/generator/presets.tsx:75
+msgid "Work uniform"
+msgstr "Uniforme de trabajo"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:33
+msgid "Writing"
+msgstr "Escritura"
+
+#: src/app/[locale]/character/[chatbotID]/character.tsx:89
+msgid "years"
+msgstr "años"
+
+#: src/app/components/babes/tabs/tab-summary.tsx:186
+msgid "years old"
+msgstr "años de edad"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:41
+msgid "Yoga"
+msgstr "Yoga"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:23
+msgid "Yoga Instructor"
+msgstr "Instructora de yoga"
+
+#: src/app/components/generator/presets.tsx:60
+msgid "Yoga pants"
+msgstr "Pantalones de yoga"
+
+#: src/app/components/actions/unlock-post-button.tsx:57
+#: src/app/components/actions/unlock-chatbot-button.tsx:59
+#: src/app/components/actions/unlock-chatbot-button.tsx:72
+msgid "You don't have enough tokens."
+msgstr "No tienes suficientes tokens."
+
+#: src/app/[locale]/(authenticated)/gallery/empty-gallery.tsx:21
+msgid "You have no images in gallery yet."
+msgstr "Aún no tienes imágenes en la galería."
+
+#: src/app/[locale]/(authenticated)/messages/no-messages.tsx:20
+msgid "You have no messages from our babes. Start a new chat now!"
+msgstr "No tienes mensajes de nuestras babes. ¡Inicia un nuevo chat ahora!"
+
+#: src/app/components/notifications/generator-notifications.tsx:82
+msgid "You're out of tokens"
+msgstr "Te has quedado sin tokens"
+
+#: src/app/components/messages/chat.tsx:313
+msgid "You’ve hit your chat limit."
+msgstr "Has alcanzado tu límite de chat."
+
+#: src/app/components/messages/chat.tsx:360
+msgid ""
+"You've run out of tokens for image generation. You can keep chatting or buy "
+"more tokens."
+msgstr ""
+"Te has quedado sin tokens para la generación de imágenes. Puedes seguir "
+"chateando o comprar más tokens."
+
+#: src/app/components/messages/chat.tsx:325
+msgid "You've run out of tokens. Buy more tokens to continue chatting."
+msgstr "Te has quedado sin tokens. Compra más tokens para seguir chateando."
+
+#: src/app/[locale]/babes/page.tsx:38
+msgid "Your"
+msgstr "Tu"
+
+#: src/app/[locale]/babes/queue/page.tsx:31
+msgid "Your AI babe will be ready in few seconds (up to 1 min)"
+msgstr "Tu babe de AI estará lista en unos segundos (hasta 1 min)"
+
+#: src/app/components/notifications/generator-notifications.tsx:120
+msgid "Your babe is ready!"
+msgstr "¡Tu babe está lista!"
+
+#: src/app/components/layout/header/menu.tsx:73
+msgid "Your Gallery"
+msgstr "Tu galería"
+
+#: src/app/components/notifications/generator-notifications.tsx:49
+msgid "Your image is ready!"
+msgstr "¡Tu imagen está lista!"
+
+#: src/app/components/babes/tabs/tab-occupation.tsx:34
+msgid "Youtube"
+msgstr "Youtube"
+
+#~ msgid ""
+#~ " Buy Tokens as a one-off purchase. No commitment, no strings attached, no "
+#~ "expiration date. "
+#~ msgstr ""
+#~ "Compra tokens como una compra única. Sin compromiso, sin ataduras, sin fecha"
+#~ " de expiración."
+
+#~ msgid "{tab}"
+#~ msgstr "{tab}"
+
+#~ msgid "100 tokens/month + 10 daily bonus"
+#~ msgstr "100 tokens/mes + 10 de bono diario"
+
+#~ msgid "100% anonymous. You can cancel anytime."
+#~ msgstr "100% anónimo. Puedes cancelar en cualquier momento."
+
+#~ msgid "3 Month plan is billed as one payment of $23.97 every 3 months."
+#~ msgstr ""
+#~ "El plan de 3 meses se cobra como un único pago de $23.97 cada 3 meses."
+
+#~ msgid "Access roleplaying"
+#~ msgstr "Acceder a juegos de rol"
+
+#~ msgid "Become <0>Member</0>"
+#~ msgstr "Hazte <0>Miembro</0>"
+
+#~ msgid "Blonde"
+#~ msgstr "Rubia"
+
+#~ msgid "Blue"
+#~ msgstr "Azul"
+
+#~ msgid "Brown"
+#~ msgstr "Marrón"
+
+#~ msgid "Brunette"
+#~ msgstr "Morena"
+
+#~ msgid "Buy tokens"
+#~ msgstr "Comprar tokens"
+
+#~ msgid "Cancels"
+#~ msgstr "Cancelaciones"
+
+#~ msgid "Chat with your babes"
+#~ msgstr "Chatea con tus babes"
+
+#~ msgid "Click here!"
+#~ msgstr "¡Haz clic aquí!"
+
+#~ msgid "Czech"
+#~ msgstr "Checo"
+
+#~ msgid "Failed to rename chatbot"
+#~ msgstr "Error al renombrar el chatbot"
+
+#~ msgid "Failed to rename your Babe"
+#~ msgstr "No se pudo renombrar tu Babe"
+
+#~ msgid "First subscription up to 60% off!"
+#~ msgstr "¡Primera suscripción con hasta un 60% de descuento!"
+
+#~ msgid "First subscription up to 60% off."
+#~ msgstr "Primer suscripción con hasta un 60% de descuento."
+
+#~ msgid "Generate erotic pictures of your babes"
+#~ msgstr "Genera imágenes eróticas de tus babes"
+
+#~ msgid "Generate Up to 400 Images"
+#~ msgstr "Genera hasta 400 imágenes"
+
+#~ msgid "Generate up to 400 pictures monthly"
+#~ msgstr "Genera hasta 400 imágenes mensuales"
+
+#~ msgid "Generate up to 500 pictures monthly"
+#~ msgstr "Genera hasta 500 imágenes mensuales"
+
+#~ msgid "Get <0>60%</0> off for your subscription!"
+#~ msgstr "¡Obtén <0>60%</0> de descuento en tu suscripción!"
+
+#~ msgid "Get Exclusive Discount {0} Only Today!"
+#~ msgstr "¡Obtén un Descuento Exclusivo {0} Solo Hoy!"
+
+#~ msgid "Get Premium"
+#~ msgstr "Obtener Premium"
+
+#~ msgid "Girls"
+#~ msgstr "Chicas"
+
+#~ msgid "Green"
+#~ msgstr "Verde"
+
+#~ msgid ""
+#~ "Image generation will be available again at {0} Meanwhile you can continue "
+#~ "chatting or upgrade to premium"
+#~ msgstr ""
+#~ "La generación de imágenes estará disponible nuevamente a las {0}. Mientras "
+#~ "tanto, puedes seguir chateando o mejorar a premium."
+
+#~ msgid "Image quality"
+#~ msgstr "Calidad de imagen"
+
+#~ msgid "Limited time offer"
+#~ msgstr "Oferta por tiempo limitado"
+
+#~ msgid "Open private galleries"
+#~ msgstr "Abrir galerías privadas"
+
+#~ msgid "Pink"
+#~ msgstr "Rosa"
+
+#~ msgid "Renews"
+#~ msgstr "Renovación"
+
+#~ msgid "Semi-Realistic"
+#~ msgstr "Semi-realista"
+
+#~ msgid "Skip waiting and queues"
+#~ msgstr "Sáltate la espera y las filas"
+
+#~ msgid "Tokens"
+#~ msgstr "Tokens"
+
+#~ msgid "Type below what you want to see or select prompt from templates"
+#~ msgstr ""
+#~ "Escribe abajo lo que quieres ver o selecciona un prompt de las plantillas"
+
+#~ msgid "Unblur all chat pictures"
+#~ msgstr "Desbloquear todas las imágenes del chat"
+
+#~ msgid "Unblur images!"
+#~ msgstr "¡Desbloquear imágenes!"
+
+#~ msgid "Unlimited chat with AI babes"
+#~ msgstr "Chat ilimitado con babes de AI"
+
+#~ msgid "Unlock storytelling"
+#~ msgstr "Desbloquear narración"
+
+#~ msgid "Up to <0>400 Free </0>Tokens  Monthly"
+#~ msgstr "Hasta <0>400 tokens gratis</0> al mes"
+
+#~ msgid "Want to keep the conversation going and unlock even more?"
+#~ msgstr "¿Quieres seguir la conversación y desbloquear aún más?"
+
+#~ msgid ""
+#~ "You have ran out of tokens for image generation. You can continue chatting "
+#~ "or purchase more tokens."
+#~ msgstr ""
+#~ "Te has quedado sin tokens para la generación de imágenes. Puedes seguir "
+#~ "chateando o comprar más tokens."
+
+#~ msgid ""
+#~ "You have reached free limit can continue chatting at {0} or upgrade to "
+#~ "premium"
+#~ msgstr ""
+#~ "Has alcanzado el límite gratuito, puedes seguir chateando a las {0} o "
+#~ "mejorar a premium."
+
+#~ msgid ""
+#~ "You've reached your free limit. You can continue chatting at {0} or upgrade "
+#~ "to premium and skip the wait."
+#~ msgstr ""
+#~ "Has alcanzado tu límite gratuito. Puedes seguir chateando en {0} o mejorar a"
+#~ " premium y evitar la espera."
+
+#~ msgid "Your credit card statement will read UG*MemoraAI420777149679, Prague"
+#~ msgstr "Tu estado de cuenta mostrará UG*MemoraAI420777149679, Praga"

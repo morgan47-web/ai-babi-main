@@ -1,0 +1,33 @@
+{
+  "lang": "en",
+  "merchant": {
+    "merchantID": "MATA280225001",
+    "customerID": "03b467d2841e401f99f8026cf855c343"
+  },
+  "transaction": {
+    "txnAmount": "11.99",
+    "async": true,
+    "currencyCode": "EUR",
+    "txnReference": "04769a9d-352e-48b8-9934-6060594c7c5b",
+    "isApp": false,
+    "payout": false
+  },
+  "url": {
+    "successURL": "https://api.dev.mybabes.ai/v1/subscription/callback/success?utm_source=undefined&utm_campaign=undefined&value=11.99&currency=USD",
+    "cancelURL": "https://dev.mybabes.ai/declined?utm_source=undefined&utm_campaign=undefined&value=11.99&currency=USD",
+    "failURL": "https://dev.mybabes.ai/declined?utm_source=undefined&utm_campaign=undefined&value=11.99&currency=USD"
+  },
+  "customer": {
+    "billingAddress": {
+      "firstName": null,
+      "lastName": null,
+      "emailId": "dirys@seznam.cz",
+      "mobileNo": null
+    }
+  },
+  "description": "Test",
+  "totalCycles": 9999,
+  "quantity": 1,
+  "expireIn": 1,
+  "automaticDebit": true
+}
