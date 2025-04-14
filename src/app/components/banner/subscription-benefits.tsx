@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import Checkmark from "@/components/icons/generated/Checkmark"
-import { Button } from "@/components/ui/button"
-import { useRouter } from "next/navigation"
-import { BenefitsType } from "./benefit-types"
-import { cn } from "@/lib/utils"
-import { useMediaQuery } from "@/app/hooks/useMediaQuery"
-import { useEffect } from "react"
-import { Trans } from "@lingui/react/macro"
+import Checkmark from "@/components/icons/generated/Checkmark";
+import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
+import { BenefitsType } from "./benefit-types";
+import { cn } from "@/lib/utils";
+import { useMediaQuery } from "@/app/hooks/useMediaQuery";
+import { useEffect } from "react";
+import { Trans } from "@lingui/react/macro";
 
 const headingMap = {
   [BenefitsType.subscription]: "",
@@ -33,7 +33,7 @@ const headingMap = {
       This babe is for premium users only! Subscribe to unlock her and more
     </Trans>
   ),
-}
+};
 
 export const perksMap = {
   [BenefitsType.trial]: [
@@ -88,7 +88,7 @@ export const perksMap = {
     <Trans key="premium-babes-3">Enjoy Unlimited Chat</Trans>,
     <Trans key="premium-babes-5">Unlock ALL NSFW reels</Trans>,
   ],
-}
+};
 
 export default function SubscriptionBenefits({
   type,
@@ -96,16 +96,16 @@ export default function SubscriptionBenefits({
   hideButton,
   className,
 }: {
-  type: BenefitsType
-  onButtonClick?: () => void
-  hideButton?: boolean
-  className?: string
+  type: BenefitsType;
+  onButtonClick?: () => void;
+  hideButton?: boolean;
+  className?: string;
 }) {
-  const { push } = useRouter()
-  const isSmallPhone = useMediaQuery("(max-height: 768px)")
+  const { push } = useRouter();
+  const isSmallPhone = useMediaQuery("(max-height: 768px)");
 
   useEffect(() => {
-    if (!type) return // prevent multiple calls
+    if (!type) return; // prevent multiple calls
 
     gtag("event", "view_item", {
       items: [
@@ -114,8 +114,8 @@ export default function SubscriptionBenefits({
           item_name: "Subscription - " + type,
         },
       ],
-    })
-  }, [type])
+    });
+  }, [type]);
 
   return (
     <div
@@ -128,13 +128,13 @@ export default function SubscriptionBenefits({
         {
           "gap-1": isSmallPhone,
         },
-        className,
+        className
       )}
     >
       {headingMap[type] && (
         <h1
           className={`
-            text-start text-2xl font-bold text-white
+            text-start text-[12px] font-bold text-white
 
             md:text-center
           `}
@@ -153,12 +153,12 @@ export default function SubscriptionBenefits({
               `,
               {
                 "pb-0 text-xs": isSmallPhone,
-              },
+              }
             )}
             key={index}
           >
             <Checkmark className="text-primary" />
-            <p>{perk}</p>
+            <p className="text-[14px]">{perk}</p>
           </div>
         ))}
       {!hideButton && (
@@ -176,16 +176,16 @@ export default function SubscriptionBenefits({
                   item_name: "Subscription - " + type,
                 },
               ],
-            })
+            });
             if (onButtonClick) {
-              onButtonClick()
+              onButtonClick();
             }
-            push("/subscription")
+            push("/subscription");
           }}
         >
           <Trans>Become PREMIUM</Trans>
         </Button>
       )}
     </div>
-  )
+  );
 }

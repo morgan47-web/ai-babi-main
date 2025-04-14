@@ -1,22 +1,22 @@
-"use client"
+"use client";
 
-import { BenefitsType } from "@/app/components/banner/benefit-types"
-import SubscriptionBenefits from "@/app/components/banner/subscription-benefits"
+import { BenefitsType } from "@/app/components/banner/benefit-types";
+import SubscriptionBenefits from "@/app/components/banner/subscription-benefits";
 import SubscriptionFooter, {
   PaymentAssurance,
-} from "@/app/components/profile/subscription-footer"
-import { cn } from "@/lib/utils"
-import { Trans } from "@lingui/react/macro"
-import { usePricing } from "@/app/context/pricing"
-import { useState } from "react"
-import { Card } from "@/components/ui/card"
-import OneTimePaymentCard from "@/app/components/profile/v2/one-time-payment-card"
-import { displayTokenAmount } from "@/app/lib/tokens"
-import BuyAddonsButton from "@/app/components/actions/truevo/buy-addons"
+} from "@/app/components/profile/subscription-footer";
+import { cn } from "@/lib/utils";
+import { Trans } from "@lingui/react/macro";
+import { usePricing } from "@/app/context/pricing";
+import { useState } from "react";
+import { Card } from "@/components/ui/card";
+import OneTimePaymentCard from "@/app/components/profile/v2/one-time-payment-card";
+import { displayTokenAmount } from "@/app/lib/tokens";
+import BuyAddonsButton from "@/app/components/actions/truevo/buy-addons";
 
 export default function GetTokensDesktop() {
-  const pricing = usePricing()
-  const [selected, setSelected] = useState("1")
+  const pricing = usePricing();
+  const [selected, setSelected] = useState("1");
 
   return (
     <main
@@ -24,7 +24,7 @@ export default function GetTokensDesktop() {
         `
           flex w-full flex-1 flex-col items-center justify-top space-y-2 p-4
           px-5
-        `,
+        `
       )}
     >
       <div className={`space-y-2 text-center`}>
@@ -45,8 +45,8 @@ export default function GetTokensDesktop() {
         `}
       >
         <div className="space-y-2 pr-10">
-          <h3 className="text-[24px]">
-            <Trans>Premium Benefits:</Trans>
+          <h3 className="text-[12px]">
+            <Trans>Get anything you need to get started.</Trans>
           </h3>
           <SubscriptionBenefits type={BenefitsType.trial} hideButton />
         </div>
@@ -59,7 +59,7 @@ export default function GetTokensDesktop() {
               displayPrice={plan.displayPrice}
               selected={selected === plan.id}
               onClick={() => {
-                setSelected(plan.id)
+                setSelected(plan.id);
               }}
               discount={plan.discount ?? undefined}
             />
@@ -83,5 +83,5 @@ export default function GetTokensDesktop() {
       <PaymentAssurance />
       <SubscriptionFooter />
     </main>
-  )
+  );
 }

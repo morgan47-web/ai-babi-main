@@ -13,16 +13,16 @@ import SubscriptionMobile from "./subscription-mobile";
 import { Badge } from "@/components/ui/badge";
 
 export const TABS = {
-  Subscription: {
-    value: "subscription",
+  monthlySubscription: {
+    value: "monthly",
     title: <Trans>Monthly</Trans>,
   },
-  BuyTokens: {
-    value: "buy-tokens",
+  yearlySubscription: {
+    value: "yearly",
     title: <Trans>Quartely</Trans>,
   },
-  FreeTokens: {
-    value: "free-tokens",
+  onetimeSubscription: {
+    value: "one-time",
     title: <Trans>One-Time</Trans>,
   },
 };
@@ -92,22 +92,34 @@ export default function SubscriptionTabs({
         </TabsList>
 
         <TabsContent
-          value={TABS.BuyTokens.value}
+          value={TABS.monthlySubscription.value}
           className="flex flex-1 overflow-auto"
         >
-          {isDesktop ? <GetTokensDesktop /> : <GetTokensMobile />}
+          {isDesktop ? (
+            <SubscriptionDesktop selectedPackage="monthly" />
+          ) : (
+            <SubscriptionMobile selectedPackage="monthly" />
+          )}
         </TabsContent>
         <TabsContent
-          value={TABS.Subscription.value}
+          value={TABS.yearlySubscription.value}
           className="flex flex-1 overflow-auto"
         >
-          {isDesktop ? <SubscriptionDesktop /> : <SubscriptionMobile />}
+          {isDesktop ? (
+            <SubscriptionDesktop selectedPackage="yearly" />
+          ) : (
+            <SubscriptionMobile selectedPackage="yearly" />
+          )}
         </TabsContent>
         <TabsContent
-          value={TABS.FreeTokens.value}
+          value={TABS.onetimeSubscription.value}
           className="flex flex-1 overflow-auto"
         >
-          <EarnTokens isDesktop={isDesktop} />
+          {isDesktop ? (
+            <SubscriptionDesktop selectedPackage="one-time" />
+          ) : (
+            <SubscriptionMobile selectedPackage="one-time" />
+          )}
         </TabsContent>
       </Tabs>
     </main>

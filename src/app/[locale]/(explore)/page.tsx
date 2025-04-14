@@ -10,6 +10,10 @@ import TokenPricing from "@/app/components/dialog/token-pricing";
 import SubscriptionDesktop from "../(authenticated)/subscription/subscription-desktop";
 import SubscriptionTabs from "../(authenticated)/subscription/tabs";
 import BecomePremiumDialog from "@/app/components/dialog/become-premium";
+import SubscriptionCard from "@/app/components/profile/subscription-card";
+import SubscriptionCards from "@/app/components/profile/subscription-cards";
+import ProfileContent from "../(authenticated)/profile/tabs";
+import GetTokensDesktop from "../(authenticated)/subscription/get-tokens-desktop";
 
 export const dynamic = "force-dynamic";
 
@@ -51,7 +55,7 @@ export default async function ExplorePage({
         >
           <Suspense fallback={<PostsGridSkeleton />}>
             <SubscriptionTabs />
-
+            <GetTokensDesktop />
             <ExploreContent />
           </Suspense>
         </div>
