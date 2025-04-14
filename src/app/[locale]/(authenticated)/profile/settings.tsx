@@ -1,41 +1,41 @@
-"use client"
+"use client";
 
-import ChangePasswordDialog from "@/app/components/dialog/change-password"
-import { Button } from "@/components/ui/button"
-import Checkbox from "@/components/ui/check-box"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { TabsContent } from "@/components/ui/tabs"
-import React, { useState } from "react"
-import { CheckedState } from "@radix-ui/react-checkbox"
-import { useUser } from "@/app/context/user"
-import { patchUser } from "@/app/lib/server/actions/actions"
-import { Spinner } from "@/components/ui/spinner"
-import { TABS } from "@/app/[locale]/(authenticated)/profile/tabs"
-import CharacterAvatar from "@/app/components/character/character-avatar"
-import { Trans } from "@lingui/react/macro"
-import { getMainPreference } from "@/app/lib/preferences"
-import DeleteAccountDialog from "@/app/components/dialog/cancel/delete-account"
+import ChangePasswordDialog from "@/app/components/dialog/change-password";
+import { Button } from "@/components/ui/button";
+import Checkbox from "@/components/ui/check-box";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { TabsContent } from "@/components/ui/tabs";
+import React, { useState } from "react";
+import { CheckedState } from "@radix-ui/react-checkbox";
+import { useUser } from "@/app/context/user";
+import { patchUser } from "@/app/lib/server/actions/actions";
+import { Spinner } from "@/components/ui/spinner";
+import { TABS } from "@/app/[locale]/(authenticated)/profile/tabs";
+import CharacterAvatar from "@/app/components/character/character-avatar";
+import { Trans } from "@lingui/react/macro";
+import { getMainPreference } from "@/app/lib/preferences";
+import DeleteAccountDialog from "@/app/components/dialog/cancel/delete-account";
 
 export default function SettingsTab() {
-  const user = useUser()
-  const usernameRef = React.useRef<HTMLInputElement>(null)
-  const [loading, setLoading] = useState(false)
+  const user = useUser();
+  const usernameRef = React.useRef<HTMLInputElement>(null);
+  const [loading, setLoading] = useState(false);
   const [checkedItems, setCheckedItems] = useState({
     girls: user?.user.preferences.displayGirls ?? false,
     anime: user?.user.preferences.displayAnime ?? false,
-  })
+  });
 
   const handleCheckboxChange = (name: string, checked: CheckedState) => {
     setCheckedItems((prevState) => ({
       ...prevState,
       [name]: checked,
-    }))
-  }
+    }));
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setLoading(true)
+    e.preventDefault();
+    setLoading(true);
     await patchUser({
       username: usernameRef.current?.value,
       preferences: {
@@ -44,7 +44,7 @@ export default function SettingsTab() {
         usernameUpdated: true,
       },
     }).then(() => {
-      setLoading(false)
+      setLoading(false);
       user?.setUser((prevState) => ({
         ...prevState,
         username: usernameRef.current?.value ?? prevState.username,
@@ -56,9 +56,9 @@ export default function SettingsTab() {
           displayAnime: checkedItems.anime,
           displayGirls: checkedItems.girls,
         }),
-      }))
-    })
-  }
+      }));
+    });
+  };
 
   return (
     <TabsContent value={TABS.Settings.value} className="mx-auto px-2 py-8">
@@ -132,5 +132,5 @@ export default function SettingsTab() {
         </div>
       </form>
     </TabsContent>
-  )
+  );
 }

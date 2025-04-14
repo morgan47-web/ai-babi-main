@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import * as TabsPrimitive from "@radix-ui/react-tabs"
+import * as React from "react";
+import * as TabsPrimitive from "@radix-ui/react-tabs";
 
-import { cn } from "@/lib/utils"
-import { cva, VariantProps } from "class-variance-authority"
+import { cn } from "@/lib/utils";
+import { cva, VariantProps } from "class-variance-authority";
 
-const Tabs = TabsPrimitive.Root
+const Tabs = TabsPrimitive.Root;
 
 const TabsList = React.forwardRef<
   React.ElementRef<typeof TabsPrimitive.List>,
@@ -19,12 +19,12 @@ const TabsList = React.forwardRef<
         inline-flex h-12 w-full items-center space-x-2 bg-transparent p-2
         text-muted-foreground
       `,
-      className,
+      className
     )}
     {...props}
   />
-))
-TabsList.displayName = TabsPrimitive.List.displayName
+));
+TabsList.displayName = TabsPrimitive.List.displayName;
 
 const tabTriggerVariant = cva(
   `inline-flex items-center justify-center font-medium transition-all`,
@@ -50,7 +50,7 @@ const tabTriggerVariant = cva(
           data-[state=active]:underline-offset-[3px]
         `,
         pill: `
-          rounded-full px-4 py-2 text-xs font-bold transition-none
+          rounded-full px-8 py-3 text-xs font-bold transition-none
 
           data-[state=active]:bg-gradient-to-b
           data-[state=active]:from-[#000000] data-[state=active]:to-[#242529]
@@ -64,8 +64,8 @@ const tabTriggerVariant = cva(
     defaultVariants: {
       variant: "default",
     },
-  },
-)
+  }
+);
 
 export interface TabTriggerProps
   extends React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger>,
@@ -80,8 +80,8 @@ const TabsTrigger = React.forwardRef<
     ref={ref}
     {...props}
   />
-))
-TabsTrigger.displayName = TabsPrimitive.Trigger.displayName
+));
+TabsTrigger.displayName = TabsPrimitive.Trigger.displayName;
 
 const TabsContent = React.forwardRef<
   React.ElementRef<typeof TabsPrimitive.Content>,
@@ -98,11 +98,11 @@ const TabsContent = React.forwardRef<
         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
         focus-visible:ring-offset-2
       `,
-      className,
+      className
     )}
     {...props}
   />
-))
-TabsContent.displayName = TabsPrimitive.Content.displayName
+));
+TabsContent.displayName = TabsPrimitive.Content.displayName;
 
-export { Tabs, TabsList, TabsTrigger, TabsContent }
+export { Tabs, TabsList, TabsTrigger, TabsContent };
