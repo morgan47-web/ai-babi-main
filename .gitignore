@@ -36,8 +36,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-package.json
-package.lock
+
 bun.lockb
 
 .vscode/settings.json
