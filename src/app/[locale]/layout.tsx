@@ -1,28 +1,28 @@
-import type { Metadata } from "next"
-import "@fontsource/roboto"
-import "../globals.css"
-import UserProvider from "../context/user"
-import PricingProvider from "../context/pricing"
-import UserInitializer from "../context/user-initializer"
+import type { Metadata } from "next";
+import "@fontsource/roboto";
+import "../globals.css";
+import UserProvider from "../context/user";
+import PricingProvider from "../context/pricing";
+import UserInitializer from "../context/user-initializer";
 import {
   GoogleTag,
   GoogleTagManager,
   GoogleTagManagerNoScript,
-} from "../scripts/google-tag"
-import TrackingCookies from "../cookies/referrer"
-import { Suspense } from "react"
-import HeaderProvider from "../context/header"
-import DialogsProvider from "../context/dialog"
-import { WebSocketProvider } from "../context/websocket"
-import ToasterProvider from "../context/toaster"
-import GeneratorNotifications from "../components/notifications/generator-notifications"
-import DialogOpener from "./(explore)/dialog-opener"
-import Hotjar from "../scripts/hotjar"
-import { LinguiClientProvider } from "../context/linguiProvider"
-import { allMessages } from "../appRouterI18n"
-import { initLingui } from "../initLingui"
-import ClientLayout from "./client-layout"
-import Tapfiliate from "../scripts/tapfiliate"
+} from "../scripts/google-tag";
+import TrackingCookies from "../cookies/referrer";
+import { Suspense } from "react";
+import HeaderProvider from "../context/header";
+import DialogsProvider from "../context/dialog";
+import { WebSocketProvider } from "../context/websocket";
+import ToasterProvider from "../context/toaster";
+import GeneratorNotifications from "../components/notifications/generator-notifications";
+import DialogOpener from "./(explore)/dialog-opener";
+import Hotjar from "../scripts/hotjar";
+import { LinguiClientProvider } from "../context/linguiProvider";
+import { allMessages } from "../appRouterI18n";
+import { initLingui } from "../initLingui";
+import ClientLayout from "./client-layout";
+import Tapfiliate from "../scripts/tapfiliate";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mybabes.ai"),
@@ -82,17 +82,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://mybabes.ai",
   },
-}
+};
 
 export default async function RootLayout({
   params,
   children,
 }: {
-  params: Promise<{ locale: string }>
-  children: React.ReactNode
+  params: Promise<{ locale: string }>;
+  children: React.ReactNode;
 }) {
-  const locale = (await params).locale
-  initLingui(locale)
+  const locale = (await params).locale;
+  initLingui(locale);
 
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
@@ -154,5 +154,5 @@ export default async function RootLayout({
         {/* <TrafficJunkyInfinityTag /> */}
       </body>
     </html>
-  )
+  );
 }

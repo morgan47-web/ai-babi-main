@@ -1,5 +1,5 @@
-"use client"
-import { useUser } from "@/app/context/user"
+"use client";
+import { useUser } from "@/app/context/user";
 import {
   eventChatFreemiumLimit,
   eventChatImageFreemiumLimit,
@@ -11,42 +11,42 @@ import {
   eventSubscriptionPopup,
   useWebSocket,
   WebSocketMessage,
-} from "@/app/context/websocket"
-import { scrollToBottom, useScrollToBottom } from "@/app/lib/chat"
-import { ChatMessage } from "@/app/lib/generated/models/ChatMessage"
-import { Type } from "@/app/lib/generated/models/Type"
-import { sendMessage } from "@/app/lib/server/actions/actions"
-import { useEffect, useRef, useState } from "react"
-import { v4 as uuidv4 } from "uuid"
-import BaseMessage from "./message"
-import { MessageLoader } from "../loader/message-loader"
-import ChatInput from "./chat-input"
-import CharacterChatInfo from "./character-info"
-import { useDialogs } from "@/app/context/dialog"
-import { PremiumDialogType } from "../dialog/dialog-types"
-import { ImageGenerationStatus } from "@/app/lib/generated"
-import ChatLimitNotification from "./daily-limit"
-import { Trans } from "@lingui/react/macro"
-import { resetsAtToLocaleString } from "@/app/lib/utils/date-utils"
-import { useRouter } from "next/navigation"
-import UserInfoDialog from "./user-info"
+} from "@/app/context/websocket";
+import { scrollToBottom, useScrollToBottom } from "@/app/lib/chat";
+import { ChatMessage } from "@/app/lib/generated/models/ChatMessage";
+import { Type } from "@/app/lib/generated/models/Type";
+import { sendMessage } from "@/app/lib/server/actions/actions";
+import { useEffect, useRef, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+import BaseMessage from "./message";
+import { MessageLoader } from "../loader/message-loader";
+import ChatInput from "./chat-input";
+import CharacterChatInfo from "./character-info";
+import { useDialogs } from "@/app/context/dialog";
+import { PremiumDialogType } from "../dialog/dialog-types";
+import { ImageGenerationStatus } from "@/app/lib/generated";
+import ChatLimitNotification from "./daily-limit";
+import { Trans } from "@lingui/react/macro";
+import { resetsAtToLocaleString } from "@/app/lib/utils/date-utils";
+import { useRouter } from "next/navigation";
+import UserInfoDialog from "./user-info";
 
 interface Props {
-  chatbotID: string
-  profilePicture: string
-  profilePictureVideo: string
-  chatbotName: string
-  chatbotAge: number
-  chatbotBio: string
-  chatMessages: ChatMessage[]
-  setChatMessages: React.Dispatch<React.SetStateAction<ChatMessage[]>>
-  isPublic: boolean
+  chatbotID: string;
+  profilePicture: string;
+  profilePictureVideo: string;
+  chatbotName: string;
+  chatbotAge: number;
+  chatbotBio: string;
+  chatMessages: ChatMessage[];
+  setChatMessages: React.Dispatch<React.SetStateAction<ChatMessage[]>>;
+  isPublic: boolean;
 }
 
 export interface ChatImageGenerationEvent {
-  status: ImageGenerationStatus
-  requestId: string
-  content: string | undefined
+  status: ImageGenerationStatus;
+  requestId: string;
+  content: string | undefined;
 }
 
 export default function Chat({
@@ -60,70 +60,70 @@ export default function Chat({
   setChatMessages,
   isPublic,
 }: Props) {
-  const user = useUser()
-  const { push } = useRouter()
-  const { subscribe, unsubscribe, clientID } = useWebSocket()
-  const dialogs = useDialogs()
-  const scrollRef = useRef<HTMLDivElement>(null)
-  const chatInputRef = useRef<HTMLDivElement>(null)
-  const [isLoading, setIsLoading] = useState(false)
+  const user = useUser();
+  const { push } = useRouter();
+  const { subscribe, unsubscribe, clientID } = useWebSocket();
+  const dialogs = useDialogs();
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const chatInputRef = useRef<HTMLDivElement>(null);
+  const [isLoading, setIsLoading] = useState(false);
   const [freemiumResetsAt, setFreemiumResetsAt] = useState<number | undefined>(
-    undefined,
-  )
-  const [chatOutOfTokens, setChatOutOfTokens] = useState(false)
+    undefined
+  );
+  const [chatOutOfTokens, setChatOutOfTokens] = useState(false);
   const [imageFreemiumResetsAt, setImageFreemiumResetsAt] = useState<
     number | undefined
-  >(undefined)
-  const [imageOutTokens, setImageOutOfTokens] = useState(false)
-  const chatMessageSentAt = useRef<number | null>(null) // Track the time of submission
-  const [, setShowServerOverloadDialog] = useState(false) // Track if the response is delayed
+  >(undefined);
+  const [imageOutTokens, setImageOutOfTokens] = useState(false);
+  const chatMessageSentAt = useRef<number | null>(null); // Track the time of submission
+  const [, setShowServerOverloadDialog] = useState(false); // Track if the response is delayed
   const newChat =
     chatMessages.length > 0 &&
-    !chatMessages.some((message) => message.role === "user")
+    !chatMessages.some((message) => message.role === "user");
 
-  useScrollToBottom(scrollRef, chatMessages)
+  useScrollToBottom(scrollRef, chatMessages);
 
   useEffect(() => {
     const observer = new MutationObserver(() => {
-      scrollToBottom(scrollRef)
-    })
+      scrollToBottom(scrollRef);
+    });
 
     if (scrollRef.current) {
-      observer.observe(scrollRef.current, { childList: true, subtree: true })
+      observer.observe(scrollRef.current, { childList: true, subtree: true });
     }
 
     return () => {
-      observer.disconnect()
-    }
-  }, [])
+      observer.disconnect();
+    };
+  }, []);
 
   useEffect(() => {
-    if (!isLoading) return
+    if (!isLoading) return;
     setTimeout(() => {
       if (chatMessageSentAt.current) {
-        setShowServerOverloadDialog(true)
+        setShowServerOverloadDialog(true);
       }
-    }, 20000)
-  }, [isLoading])
+    }, 20000);
+  }, [isLoading]);
 
   useEffect(() => {
     const onChatMessage = (message: WebSocketMessage) => {
-      chatMessageSentAt.current = null
-      setShowServerOverloadDialog(false)
-      setIsLoading(false)
-      setFreemiumResetsAt(undefined)
+      chatMessageSentAt.current = null;
+      setShowServerOverloadDialog(false);
+      setIsLoading(false);
+      setFreemiumResetsAt(undefined);
 
       const newMessage: ChatMessage = {
         type: message.type as Type,
         content: message.content,
         role: "assistant",
         requestId: message.request_id,
-      }
-      setChatMessages((prev) => [...prev, newMessage])
-    }
+      };
+      setChatMessages((prev) => [...prev, newMessage]);
+    };
 
     const onChatImageGenerationMessage = (message: WebSocketMessage) => {
-      console.log(message)
+      console.log(message);
 
       window.dispatchEvent(
         new CustomEvent<ChatImageGenerationEvent>(
@@ -134,94 +134,94 @@ export default function Chat({
               content: message.content,
               requestId: message.request_id,
             },
-          },
-        ),
-      )
+          }
+        )
+      );
       if (message.status === ImageGenerationStatus.Started) {
         const newMessage: ChatMessage = {
           type: "imageGeneration" as Type,
           content: message.content,
           role: "assistant",
           requestId: message.request_id,
-        }
-        setChatMessages((prev) => [...prev, newMessage])
+        };
+        setChatMessages((prev) => [...prev, newMessage]);
       }
-    }
+    };
 
     const onChatMessageFailed = (message: WebSocketMessage) => {
-      setIsLoading(false)
-      console.error("Failed to send message:", message)
-    }
+      setIsLoading(false);
+      console.error("Failed to send message:", message);
+    };
     const onSubscriptionPopup = () => {
-      dialogs.setPremiumOpen(true, PremiumDialogType.chat)
-    }
+      dialogs.setPremiumOpen(true, PremiumDialogType.chat);
+    };
     const onChatFreemiumReached = (message: WebSocketMessage) => {
-      setFreemiumResetsAt(parseInt(message.resets_at))
-    }
+      setFreemiumResetsAt(parseInt(message.resets_at));
+    };
     const onChatImageFreemiumReached = (message: WebSocketMessage) => {
-      setImageFreemiumResetsAt(parseInt(message.resets_at))
-    }
+      setImageFreemiumResetsAt(parseInt(message.resets_at));
+    };
     const onChatOufOfTokens = () => {
-      setChatOutOfTokens(true)
-    }
+      setChatOutOfTokens(true);
+    };
 
     const onChatImageOutOfTokens = () => {
-      setImageOutOfTokens(true)
-    }
+      setImageOutOfTokens(true);
+    };
 
-    subscribe(eventChatMessage, onChatMessage)
-    subscribe(eventChatImageGenerationStatus, onChatImageGenerationMessage)
-    subscribe(eventChatMessageFailed, onChatMessageFailed)
-    subscribe(eventSubscriptionPopup, onSubscriptionPopup)
-    subscribe(eventChatFreemiumLimit, onChatFreemiumReached)
-    subscribe(eventChatImageFreemiumLimit, onChatImageFreemiumReached)
-    subscribe(eventChatImageOutOfTokens, onChatImageOutOfTokens)
-    subscribe(eventChatOutOfTokens, onChatOufOfTokens)
+    subscribe(eventChatMessage, onChatMessage);
+    subscribe(eventChatImageGenerationStatus, onChatImageGenerationMessage);
+    subscribe(eventChatMessageFailed, onChatMessageFailed);
+    subscribe(eventSubscriptionPopup, onSubscriptionPopup);
+    subscribe(eventChatFreemiumLimit, onChatFreemiumReached);
+    subscribe(eventChatImageFreemiumLimit, onChatImageFreemiumReached);
+    subscribe(eventChatImageOutOfTokens, onChatImageOutOfTokens);
+    subscribe(eventChatOutOfTokens, onChatOufOfTokens);
 
     return () => {
-      unsubscribe(eventChatMessage, onChatMessage)
-      unsubscribe(eventChatMessageFailed, onChatMessageFailed)
-      unsubscribe(eventSubscriptionPopup, onSubscriptionPopup)
-      unsubscribe(eventChatImageGenerationStatus, onChatImageGenerationMessage)
-      unsubscribe(eventChatFreemiumLimit, onChatFreemiumReached)
-      unsubscribe(eventChatImageFreemiumLimit, onChatImageFreemiumReached)
-      unsubscribe(eventChatImageOutOfTokens, onChatImageOutOfTokens)
-      unsubscribe(eventChatOutOfTokens, onChatOufOfTokens)
-    }
-  }, [subscribe, unsubscribe, user, setChatMessages, dialogs])
+      unsubscribe(eventChatMessage, onChatMessage);
+      unsubscribe(eventChatMessageFailed, onChatMessageFailed);
+      unsubscribe(eventSubscriptionPopup, onSubscriptionPopup);
+      unsubscribe(eventChatImageGenerationStatus, onChatImageGenerationMessage);
+      unsubscribe(eventChatFreemiumLimit, onChatFreemiumReached);
+      unsubscribe(eventChatImageFreemiumLimit, onChatImageFreemiumReached);
+      unsubscribe(eventChatImageOutOfTokens, onChatImageOutOfTokens);
+      unsubscribe(eventChatOutOfTokens, onChatOufOfTokens);
+    };
+  }, [subscribe, unsubscribe, user, setChatMessages, dialogs]);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setImageFreemiumResetsAt(undefined)
-    setImageOutOfTokens(false)
+    e.preventDefault();
+    setImageFreemiumResetsAt(undefined);
+    setImageOutOfTokens(false);
 
-    const userMessage = chatInputRef.current?.innerText.trim()
-    if (chatInputRef.current) chatInputRef.current.innerText = ""
-    if (!userMessage) return
-    if (isLoading || !user?.user.id) return
+    const userMessage = chatInputRef.current?.innerText.trim();
+    if (chatInputRef.current) chatInputRef.current.innerText = "";
+    if (!userMessage) return;
+    if (isLoading || !user?.user.id) return;
 
     const newMessage: ChatMessage = {
       type: "text",
       content: userMessage,
       role: "user",
       requestId: uuidv4(),
-    }
+    };
 
-    setChatMessages([...chatMessages, newMessage])
-    setIsLoading(true)
-    chatMessageSentAt.current = Date.now()
+    setChatMessages([...chatMessages, newMessage]);
+    setIsLoading(true);
+    chatMessageSentAt.current = Date.now();
 
     try {
       await sendMessage({
         chatbotId: chatbotID,
         clientId: clientID,
         message: userMessage,
-      })
+      });
     } catch (error) {
-      setIsLoading(false)
-      console.error("Failed to send message:", error)
+      setIsLoading(false);
+      console.error("Failed to send message:", error);
     }
-  }
+  };
 
   return (
     <>
@@ -353,5 +353,5 @@ export default function Chat({
         </div>
       </div>
     </>
-  )
+  );
 }

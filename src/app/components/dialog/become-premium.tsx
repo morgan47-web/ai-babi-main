@@ -4,19 +4,19 @@ import {
   DialogContent,
   DialogPortal,
   DialogOverlay,
-} from "@/components/ui/dialog"
-import React from "react"
-import SubscriptionBenefits from "../banner/subscription-benefits"
-import { BenefitsType } from "../banner/benefit-types"
-import { PremiumDialogType } from "./dialog-types"
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden"
-import { Trans } from "@lingui/react/macro"
+} from "@/components/ui/dialog";
+import React from "react";
+import SubscriptionBenefits from "../banner/subscription-benefits";
+import { BenefitsType } from "../banner/benefit-types";
+import { PremiumDialogType } from "./dialog-types";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import { Trans } from "@lingui/react/macro";
 
 interface Props {
-  open: boolean
-  setDialogOpen: (open: boolean) => void
-  type: PremiumDialogType
-  backgroundURL?: string
+  open: boolean;
+  setDialogOpen: (open: boolean) => void;
+  type: PremiumDialogType;
+  backgroundURL?: string;
 }
 
 const dialogBenefitsMap = {
@@ -53,7 +53,7 @@ const dialogBenefitsMap = {
     title: <Trans>Want to unlock chat with premium babes?</Trans>,
     benefits: BenefitsType.premium_babes,
   },
-}
+};
 
 export default function BecomePremiumDialog({
   open,
@@ -87,5 +87,5 @@ export default function BecomePremiumDialog({
         </DialogContent>
       </DialogPortal>
     </Dialog>
-  )
+  );
 }

@@ -1,39 +1,47 @@
-import Image from "next/image"
-import Logo from "../logo"
-import { Discord, Mastercard, Visa } from "@/components/icons/generated"
-import Link from "next/link"
-import { cn } from "@/lib/utils"
-import { Trans } from "@lingui/react/macro"
+import Image from "next/image";
+import Logo from "../logo";
+import { Discord, Mastercard, Visa } from "@/components/icons/generated";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { Trans } from "@lingui/react/macro";
 
 export default function Footer({
   displayImage,
   className,
 }: {
-  displayImage?: boolean
-  className?: string
+  displayImage?: boolean;
+  className?: string;
 }) {
   return (
     <footer
       className={cn(
         `flex w-full flex-col items-center justify-evenly`,
-        className,
+        className
       )}
     >
       {displayImage && (
-        <div
-          className={`
-            relative h-[230px] w-full
+        <div className="relative w-full">
+          {/* For small screens (mobile) */}
+          <div className="block md:hidden h-[430px] relative w-full">
+            <Image
+              src="/images/banner-footer-explore2.jpg"
+              alt="find your own AI babe"
+              fill
+              priority
+              className="object-fill"
+            />
+          </div>
 
-            md:h-[400px]
-
-            xl:h-[0px]
-          `}
-        >
-          <Image
-            src="/images/footer-banner.png"
-            alt="find your own AI babe"
-            fill
-          />
+          {/* For medium and up (tablet/desktop) */}
+          <div className="hidden sm:block md:h-[140px] xl:h-[180px] relative w-full">
+            <Image
+              src="/images/banner-footer-explore1.jpg"
+              alt="find your own AI babe"
+              fill
+              priority
+              className="object-cover"
+            />
+          </div>
         </div>
       )}
 
@@ -166,5 +174,5 @@ export default function Footer({
         </div>
       </div>
     </footer>
-  )
+  );
 }
