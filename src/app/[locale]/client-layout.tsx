@@ -1,28 +1,28 @@
-"use client"
+"use client";
 
-import SideNav, { sideBarHidden } from "@/app/components/layout/side-nav"
-import Header, { headerHidden } from "../components/layout/header/header"
-import NavBar, { mobileNavbarHidden } from "../components/layout/navbar"
-import { usePathname } from "next/navigation"
-import { cn } from "@/lib/utils"
+import SideNav, { sideBarHidden } from "@/app/components/layout/side-nav";
+import Header, { headerHidden } from "../components/layout/header/header";
+import NavBar, { mobileNavbarHidden } from "../components/layout/navbar";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 export default function ClientLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   const getMobileGridLayout = () => {
     if (headerHidden(pathname) && mobileNavbarHidden(pathname)) {
-      return "grid-rows-1"
+      return "grid-rows-1";
     } else if (!headerHidden(pathname) && mobileNavbarHidden(pathname)) {
-      return "grid-rows-[auto_1fr]"
+      return "grid-rows-[auto_1fr]";
     } else if (headerHidden(pathname) && !mobileNavbarHidden(pathname)) {
-      console.log("grid-rows-[1fr_auto]")
-      return "grid-rows-[1fr_60px]"
+      console.log("grid-rows-[1fr_auto]");
+      return "grid-rows-[1fr_60px]";
     }
-  }
+  };
 
   return (
     <div
@@ -38,7 +38,7 @@ export default function ClientLayout({
         getMobileGridLayout(),
         {
           "md:grid-cols-1": sideBarHidden(pathname),
-        },
+        }
       )}
     >
       {!sideBarHidden(pathname) && (
@@ -74,5 +74,5 @@ export default function ClientLayout({
         <NavBar />
       </div>
     </div>
-  )
+  );
 }

@@ -1,26 +1,28 @@
-import { CoinIcon } from "@/components/icons/generated"
-import { cn } from "@/lib/utils"
-import { Trans } from "@lingui/react/macro"
+import { CoinIcon } from "@/components/icons/generated";
+import { TokenIcon } from "@/components/icons/generated/CoinIcon";
+import { cn } from "@/lib/utils";
+import { Trans } from "@lingui/react/macro";
+import { Star } from "lucide-react";
 
 interface OneTimePaymentCardProps extends React.HTMLAttributes<HTMLDivElement> {
-  diamonds: number
-  displayPrice: string
-  tokens: string
-  selected: boolean
-  discount?: string
+  diamonds: number;
+  displayPrice: string;
+  tokens: string;
+  selected: boolean;
+  discount?: string;
 }
 
 function Diamonds({ count }: { count: number }) {
   return (
-    <div className="grid h-auto grid-cols-4 gap-[4px]">
+    <div className="grid h-auto  grid-cols-4 gap-[4px]">
       {Array.from({ length: count }).map((_, index) => (
-        <CoinIcon key={"diamond" + index} />
+        <TokenIcon key={"diamond" + index} />
       ))}
       {Array.from({ length: 4 - count }).map((_, index) => (
         <EmptyDiamond key={"diamond" + index} />
       ))}
     </div>
-  )
+  );
 }
 
 function EmptyDiamond() {
@@ -32,7 +34,7 @@ function EmptyDiamond() {
         shadow-[0px_0px_13px_0px_#0079ff80,0px_1px_10px_0px_#0079ff80]
       `}
     />
-  )
+  );
 }
 
 export default function OneTimePaymentCard({
@@ -51,7 +53,7 @@ export default function OneTimePaymentCard({
           flex h-16 w-full items-center justify-between rounded-[16px] bg-card
           px-4 py-2 outline outline-[1px] outline-divider transition-transform
         `,
-        selected && `outline-[2px] outline-trigger-border`,
+        selected && `outline-[2px] outline-trigger-border`
       )}
     >
       <div className="flex items-center gap-1">
@@ -73,5 +75,5 @@ export default function OneTimePaymentCard({
         </p>
       </div>
     </div>
-  )
+  );
 }
