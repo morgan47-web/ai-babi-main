@@ -65,27 +65,22 @@ export default function SubscriptionTabs({
           className={`
             relative flex w-full max-w-[700px] h-[8vh] items-center justify-between
             gap-1 rounded-full border border-divider bg-menu p-1
-
-            md:w-[438px]
+            
+            md:w-[498px]
             sm:w-auto
           `}
         >
           <Badge
             className="absolute -top-1   p-1 py-0.5 text-[10px]
-            md:left-56
-            sm:left-40
+            md:left-64
+            max-sm:left-48
             "
             variant="secondary"
           >
             <Trans>40% OFF</Trans>
           </Badge>
           {Object.values(TABS).map((tab) => (
-            <TabsTrigger
-              variant={"pill"}
-              key={tab.value}
-              value={tab.value}
-              style={{ fontSize: "14px" }}
-            >
+            <TabsTrigger variant={"pill"} key={tab.value} value={tab.value}>
               {tab.title}
             </TabsTrigger>
           ))}

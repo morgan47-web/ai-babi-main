@@ -18,30 +18,59 @@ export default function GetTokensDesktop() {
   const pricing = usePricing();
   const [selected, setSelected] = useState("1");
 
+  const tokenPlans: TokenPlan[] = [
+    {
+      id: "50-tokens",
+      tokens: 50,
+      price: "€9.99",
+      diamonds: 4,
+    },
+    {
+      id: "200-tokens",
+      tokens: 200,
+      price: "€14.99",
+      diamonds: 4,
+    },
+    {
+      id: "550-tokens",
+      tokens: 550,
+      price: "€29.99",
+      bonus: "+10% ",
+      diamonds: 2,
+    },
+    {
+      id: "1150-tokens",
+      tokens: 1150,
+      price: "€54.99",
+      bonus: "+15% ",
+      diamonds: 3,
+    },
+  ];
+
   return (
     <main
       className={cn(
         `
-          flex w-full flex-1 flex-col items-center justify-top space-y-2 p-4
+          flex w-full  flex-1 flex-col items-center justify-top space-y-2 p-4
           px-5
         `
       )}
     >
-      <div className={`space-y-2 text-center`}>
-        <h1 className={`text-[40px] text-[#D9D9D9]`}>
+      <div className={`space-y-1 text-center`}>
+        <h1 className={`text-[20px] text-[#FAFCFF]`}>
           <Trans>Get tokens</Trans>
         </h1>
-        <h3 className={`text-border/60`}>
+        <h3 className={`text-border/60 text-center `}>
           <Trans>
-            Buy tokens as a one-off purchase. Enjoy full premium features with
-            no <br /> commitment, no strings attached and no expiration date.
+            Buy Tokens as a one-off purchase. No commitment, no expiration date.
           </Trans>
         </h3>
       </div>
       <Card
         className={`
-          grid grid-cols-2 grid-cols-[350px_350px] rounded-[40px] border
+          grid grid-cols-2 grid-cols-[350px_350px] rounded-[40px] 
           border-divider bg-[#111115] p-10
+          
         `}
       >
         <div className="space-y-2 pr-10">
@@ -51,12 +80,25 @@ export default function GetTokensDesktop() {
           <SubscriptionBenefits type={BenefitsType.trial} hideButton />
         </div>
         <div className={`flex flex-col justify-top space-y-2`}>
-          {pricing?.state.addons.map((plan, i) => (
+          {/* {pricing?.state.addons.map((plan, i) => (
             <OneTimePaymentCard
               key={"plan" + plan.id}
               diamonds={Math.min(4, i + 1)}
               tokens={displayTokenAmount(plan.tokens)}
               displayPrice={plan.displayPrice}
+              selected={selected === plan.id}
+              onClick={() => {
+                setSelected(plan.id);
+              }}
+              discount={plan.discount ?? undefined}
+            />
+          ))} */}
+          {tokenPlans.map((plan, i) => (
+            <OneTimePaymentCard
+              key={"plan" + plan.id}
+              diamonds={Math.min(4, i + 1)}
+              tokens={displayTokenAmount(plan.tokens)}
+              displayPrice={plan.price}
               selected={selected === plan.id}
               onClick={() => {
                 setSelected(plan.id);
@@ -80,8 +122,8 @@ export default function GetTokensDesktop() {
           />
         </div>
       </Card>
-      <PaymentAssurance />
-      <SubscriptionFooter />
+      {/* <PaymentAssurance /> */}
+      {/* <SubscriptionFooter /> */}
     </main>
   );
 }

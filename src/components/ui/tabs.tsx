@@ -50,7 +50,7 @@ const tabTriggerVariant = cva(
           data-[state=active]:underline-offset-[3px]
         `,
         pill: `
-          rounded-full px-8 py-3 text-xs font-bold transition-none
+          rounded-full px-8 max-sm:px-3 py-3 text-xs  max-sm:text-[14px] font-bold transition-none
 
           data-[state=active]:bg-gradient-to-b
           data-[state=active]:from-[#000000] data-[state=active]:to-[#242529]
@@ -58,6 +58,7 @@ const tabTriggerVariant = cva(
           data-[state=active]:outline-divider
 
           md:text-[16px]
+       
         `,
       },
     },

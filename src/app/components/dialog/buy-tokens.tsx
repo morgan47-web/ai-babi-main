@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   Dialog,
@@ -7,15 +7,15 @@ import {
   DialogOverlay,
   DialogTitle,
   DialogDescription,
-} from "@/components/ui/dialog"
-import React from "react"
-import AddonTokens from "@/app/components/profile/addon-tokens"
-import { Antivirus, BankPrivacy } from "@/components/icons/generated"
-import { Trans } from "@lingui/react/macro"
+} from "@/components/ui/dialog";
+import React from "react";
+import AddonTokens from "@/app/components/profile/addon-tokens";
+import { Antivirus, BankPrivacy } from "@/components/icons/generated";
+import { Trans } from "@lingui/react/macro";
 
 interface Props {
-  open: boolean
-  onOpenChange: (open: boolean) => void
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
 }
 
 export default function BuyTokensDialog({ open, onOpenChange }: Props) {
@@ -25,7 +25,7 @@ export default function BuyTokensDialog({ open, onOpenChange }: Props) {
         <DialogOverlay />
         <DialogContent className="mx-2 flex w-full flex-col rounded-lg py-4">
           <div>
-            <DialogTitle className="text-center text-md">
+            <DialogTitle className="text-center text-md ">
               <Trans>Buy more tokens</Trans>
             </DialogTitle>
             <DialogDescription className="text-center text-xs">
@@ -61,5 +61,5 @@ export default function BuyTokensDialog({ open, onOpenChange }: Props) {
         </DialogContent>
       </DialogPortal>
     </Dialog>
-  )
+  );
 }

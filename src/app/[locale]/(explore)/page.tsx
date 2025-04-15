@@ -7,14 +7,14 @@ import Footer from "@/app/components/explore/footer";
 import { initLingui } from "@/app/initLingui";
 import { Trans } from "@lingui/react/macro";
 import TokenPricing from "@/app/components/dialog/token-pricing";
-import SubscriptionDesktop from "../(authenticated)/subscription/subscription-desktop";
 import SubscriptionTabs from "../(authenticated)/subscription/tabs";
-import BecomePremiumDialog from "@/app/components/dialog/become-premium";
-import SubscriptionCard from "@/app/components/profile/subscription-card";
-import SubscriptionCards from "@/app/components/profile/subscription-cards";
-import ProfileContent from "../(authenticated)/profile/tabs";
+
 import GetTokensDesktop from "../(authenticated)/subscription/get-tokens-desktop";
 import BuyTokensDialog from "@/app/components/dialog/buy-tokens";
+import GeneratorNotifications from "@/app/components/notifications/generator-notifications";
+import GetTokensMobile from "../(authenticated)/subscription/get-tokens-mobile";
+import FeedbackCard from "@/app/components/feedback/page";
+import FaqSection from "@/app/components/faq/page";
 
 export const dynamic = "force-dynamic";
 
@@ -41,9 +41,9 @@ export default async function ExplorePage({
     <>
       <div
         className={`
-          relative flex w-full flex-col items-center gap-1
-
-          md:gap-4 md:px-4
+           flex w-full flex-col items-center gap-1
+           h-auto
+          md:gap-4
         `}
       >
         <ExplorePageBanner />
@@ -55,10 +55,23 @@ export default async function ExplorePage({
           `}
         >
           <Suspense fallback={<PostsGridSkeleton />}>
-            <SubscriptionTabs />
-            <GetTokensDesktop />
-            <BuyTokensDialog />
-            <ExploreContent />
+            <SubscriptionTabs defaultTab="monthly" />
+            {/*  Buy token desktop section */}
+            <div className="hidden lg:block w-full">
+              <GetTokensDesktop />
+            </div>
+
+            {/*  Buy token mobile section */}
+            <div className="block lg:hidden w-full">
+              <GetTokensMobile />
+            </div>
+            {/* Feedback section */}
+            <FeedbackCard />
+
+            {/* Faq section */}
+            {/* <div className="md:w-[80%]"> */}
+            <FaqSection />
+            {/* </div> */}
           </Suspense>
         </div>
       </div>

@@ -53,7 +53,8 @@ export default function Subscriptions({
     },
     {
       id: "premium-yearly",
-      name: "Premium (Yearly)",
+      name: "Premium",
+      icon: <Gem className="text-[#3B82F6] mr-2" size={22} />, // Blue
       tickColor: "text-white/40",
       displayPrice: "€139.99",
       billingInterval: "yearly",

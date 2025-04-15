@@ -21,7 +21,7 @@ import { cn } from "@/lib/utils";
 
 const StartFlirting = () => {
   const { user } = useUser();
-  const isDesktop = useMediaQuery("(min-width: 1024px)");
+  const isDesktop = useMediaQuery("(min-width: 724px)");
   const dialogs = useDialogs();
   const router = useRouter();
 
@@ -33,9 +33,9 @@ const StartFlirting = () => {
           src="/images/explore-banner.jpg"
           alt="Start Flirting"
           className={`
-            cursor-pointer object-contain
+            cursor-pointer object-cover
 
-            md:rounded-[16px]
+            
           `}
           onClick={() => {
             if (!signupGuard(user, dialogs)) return;
@@ -50,9 +50,9 @@ const StartFlirting = () => {
           src="/images/explore-banner-mobile.jpg"
           alt="Start Flirting"
           className={`
-            cursor-pointer object-cover
-
-            md:rounded-[16px]
+            cursor-pointer object-contain
+ 
+          
           `}
           onClick={() => {
             dialogs.setSignupOpen(true);
@@ -96,15 +96,19 @@ export default function ExplorePageBanner() {
   return (
     <div
       className={cn(
-        `relative m-2 w-full rounded-[16px]`,
+        `relative  w-full `,
         isSignedUp(user?.user) && !isSubscribedOrTrial(user?.user)
           ? isDesktop
-            ? "h-[75px]"
+            ? "h-[200px]"
             : "h-[160px]"
           : `
-            h-[160px]
+            h-[120px]
+            max-xl:h-[13vh]
+            max-lg:h-[06vh]
+            max-md:h-[05vh]
+          max-sm:h-[25vh]
+      
 
-            md:h-[25vh]
           `
       )}
     >
