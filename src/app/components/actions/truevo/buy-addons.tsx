@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Spinner } from "@/components/ui/spinner"
-import { CreditCardIcon } from "lucide-react"
-import { useEffect, useRef, useState } from "react"
-import Cookies from "js-cookie"
-import { Trans } from "@lingui/react/macro"
-import { checkoutAddon } from "@/app/lib/server/actions/actions"
+import { Button } from "@/components/ui/button";
+import { Spinner } from "@/components/ui/spinner";
+import { CreditCardIcon } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import Cookies from "js-cookie";
+import { Trans } from "@lingui/react/macro";
+import { checkoutAddon } from "@/app/lib/server/actions/actions";
 
 interface Props {
-  productName: string
-  productID: string
-  price: string
+  productName: string;
+  productID: string;
+  price: string;
 }
 
 export default function BuyAddonsButton({
@@ -19,21 +19,21 @@ export default function BuyAddonsButton({
   productName,
   productID,
 }: Props) {
-  const [loading, setLoading] = useState(false)
-  const formRef = useRef<HTMLFormElement>(null)
-  const [action, setAction] = useState("")
-  const [data, setData] = useState("")
+  const [loading, setLoading] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
+  const [action, setAction] = useState("");
+  const [data, setData] = useState("");
 
-  const trackerParams = `?utm_source=${Cookies.get("firstReferredFrom")}&utm_campaign=${Cookies.get("campaign")}&value=${price}&currency=USD`
-  const apiBaseUrl = process.env.NEXT_PUBLIC_ZPPS_URL + "/v1"
+  const trackerParams = `?utm_source=${Cookies.get("firstReferredFrom")}&utm_campaign=${Cookies.get("campaign")}&value=${price}&currency=USD`;
+  const apiBaseUrl = process.env.NEXT_PUBLIC_ZPPS_URL + "/v1";
   const approvedURL =
-    apiBaseUrl + `/subscription/addons/callback/success` + trackerParams
+    apiBaseUrl + `/subscription/addons/callback/success` + trackerParams;
 
   const declineURL =
-    process.env.NEXT_PUBLIC_GUI_URL + "/declined" + trackerParams
+    process.env.NEXT_PUBLIC_GUI_URL + "/declined" + trackerParams;
 
   const handleBuy = async () => {
-    setLoading(true)
+    setLoading(true);
     gtag("event", "begin_checkout", {
       currency: "USD",
       value: price,
@@ -43,28 +43,28 @@ export default function BuyAddonsButton({
           item_name: productName,
         },
       ],
-    })
+    });
 
-    const promises = [checkoutAddon(productID, approvedURL, declineURL)]
-    const [resp] = await Promise.all(promises)
+    const promises = [checkoutAddon(productID, approvedURL, declineURL)];
+    const [resp] = await Promise.all(promises);
     if (resp.error || !resp.data) {
-      setLoading(false)
-      return
+      setLoading(false);
+      return;
     }
-    setAction(resp.data.action)
-    setData(resp.data.data)
+    setAction(resp.data.action);
+    setData(resp.data.data);
 
-    setLoading(false)
-  }
+    setLoading(false);
+  };
 
   useEffect(() => {
     // If action and data are set, submit the form
     if (action && data && formRef.current) {
-      console.log("action", action)
-      console.log("data", data)
-      formRef.current.submit()
+      console.log("action", action);
+      console.log("data", data);
+      formRef.current.submit();
     }
-  }, [action, data])
+  }, [action, data]);
 
   return (
     <form
@@ -79,7 +79,7 @@ export default function BuyAddonsButton({
       <Button
         id="buy-addons"
         size="lg"
-        className="h-8 w-full"
+        className="py-5 w-full text-[15px] font-medium"
         type="button"
         onClick={() => handleBuy()}
       >
@@ -87,11 +87,11 @@ export default function BuyAddonsButton({
           <Spinner loading={loading} />
         ) : (
           <>
-            <CreditCardIcon className="h-5 w-5" />
-            <Trans>Pay with Credit / Debit Card</Trans>
+            {/* <CreditCardIcon className="h-5 w-5" /> */}
+            <Trans>Buy Tokens</Trans>
           </>
         )}
       </Button>
     </form>
-  )
+  );
 }
