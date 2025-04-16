@@ -2,7 +2,6 @@
 
 import * as Avatar from "@radix-ui/react-avatar";
 import { Star } from "lucide-react";
-import Image from "next/image";
 import { Trans } from "@lingui/react/macro";
 
 type Feedback = {
@@ -46,22 +45,29 @@ const reviews: Feedback[] = [
 export default function FeedbackCard() {
   return (
     <div className="my-[2vh]">
-      <div className={`space-y-1 text-center`}>
-        <h1 className={`text-[25px] text-[#FAFCFF] font-medium`}>
+      <div className="space-y-1 text-center">
+        <h1 className="text-[25px] text-[#FAFCFF] font-medium">
           <Trans>Community Feedback</Trans>
         </h1>
-        <h3 className={`text-border/60 text-center text-[14px]`}>
+        <h3 className="text-border/60 text-center text-[14px]">
           <Trans>Here's what users say about us!</Trans>
         </h3>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 p-4 ">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
         {reviews.map(({ name, feedback, imageUrl, rating }, i) => (
           <div
             key={i}
-            className="rounded-2xl bg-[#0F0F0F] p-4 shadow-sm border border-zinc-800 w-full max-w-md text-white"
+            className="rounded-2xl bg-[#0F0F0F] p-4 shadow-sm border border-zinc-800 w-full max-w-md text-white flex flex-col justify-between gap-4"
           >
-            <p className="text-sm mb-4 leading-relaxed">{feedback}</p>
+            {/* Top section */}
+            <div>
+              <p className="text-sm leading-relaxed">{feedback}</p>
+            </div>
+
+            {/* Bottom section */}
             <div className="flex items-center justify-between">
+              {/* Avatar and name */}
               <div className="flex items-center gap-2">
                 <Avatar.Root className="inline-flex h-8 w-8 select-none items-center justify-center overflow-hidden rounded-full align-middle bg-zinc-600">
                   {imageUrl ? (
@@ -78,13 +84,15 @@ export default function FeedbackCard() {
                 </Avatar.Root>
                 <span className="font-bold">{name}</span>
               </div>
+
+              {/* Stars */}
               <div className="flex gap-[2px]">
                 {[...Array(5)].map((_, j) => (
                   <Star
                     key={j}
                     size={16}
-                    className={j < rating ? "text-yellow-400" : "text-zinc-600"}
-                    fill={j < rating ? "#facc15" : "none"}
+                    className={j < rating ? "text-yellow-400" : "text-white"}
+                    fill={j < rating ? "#facc15" : "#ffffff"}
                   />
                 ))}
               </div>
