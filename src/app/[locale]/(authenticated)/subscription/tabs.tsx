@@ -63,7 +63,7 @@ export default function SubscriptionTabs({
       >
         <TabsList
           className={`
-            relative flex w-full max-w-[700px] h-[8vh] items-center justify-between
+            relative flex w-full max-w-[700px] h-[8vh] max-sm:h-[50px] items-center justify-between
             gap-1 rounded-full border border-divider bg-menu p-1
             
             md:w-[498px]
@@ -71,7 +71,7 @@ export default function SubscriptionTabs({
           `}
         >
           <Badge
-            className="absolute -top-1   p-1 py-0.5 text-[10px]
+            className="absolute -top-1   p-1 py-0.5 text-[10px] 
             md:left-64
             max-sm:left-48
             "
@@ -80,7 +80,12 @@ export default function SubscriptionTabs({
             <Trans>40% OFF</Trans>
           </Badge>
           {Object.values(TABS).map((tab) => (
-            <TabsTrigger variant={"pill"} key={tab.value} value={tab.value}>
+            <TabsTrigger
+              variant={"pill"}
+              key={tab.value}
+              value={tab.value}
+              className="max-sm:w-[200px] max-sm:p-[1vh]"
+            >
               {tab.title}
             </TabsTrigger>
           ))}
@@ -110,11 +115,7 @@ export default function SubscriptionTabs({
           value={TABS.onetimeSubscription.value}
           className="flex flex-1 overflow-auto"
         >
-          {isDesktop ? (
-            <SubscriptionDesktop selectedPackage="one-time" />
-          ) : (
-            <SubscriptionMobile selectedPackage="one-time" />
-          )}
+          {isDesktop ? <GetTokensDesktop /> : <GetTokensMobile />}
         </TabsContent>
       </Tabs>
     </main>

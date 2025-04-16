@@ -24,6 +24,8 @@ export default function Subscriptions({
       icon: <Gem className="text-[#3B82F6] mr-2" size={22} />, // Blue
       tickColor: "text-[#3B82F6]", // Tailwind blue-500
       displayPrice: "€13.99",
+      description:
+        "Get a taste of what mybabes has to offer with access to immersive AI chat models, image generation and custom character creation.",
       billingInterval: "monthly",
       features: [
         "200 tokens/month + 10 daily bonus",
@@ -41,6 +43,8 @@ export default function Subscriptions({
       tickColor: "text-[#F97316]", // Tailwind orange-500
       displayPrice: "€29.99",
       billingInterval: "monthly",
+      description:
+        "The best mybabes has to offer. Unlimited messages and access to our Ultimate AI Engines for the most immersive AI chat experience.",
       features: [
         "500 tokens/month + 10 daily bonus",
         "Unlimited Chat",
@@ -86,15 +90,13 @@ export default function Subscriptions({
   );
 
   return (
-    <main className="flex w-full flex-1 flex-col items-center justify-top gap-4 p-4 px-5">
-      <div className="gap-2 text-center">
-        <h1 className="text-[20px] text-[#D9D9D9]">
+    <main className="flex w-full flex-1 flex-col items-center justify-top gap-2 p-4 px-3">
+      <div className="  text-center">
+        <h1 className="text-[20px] text-[#FAFCFF] font-semibold s">
           <Trans>Choose your plan</Trans>
         </h1>
-        <h3 className="text-[12px] text-border/60">
-          <Trans>
-            Get the best value—full premium features plus daily bonus tokens!
-          </Trans>
+        <h3 className="text-[12px] text-border/60 text-[#9B9FA4]">
+          <Trans>100% anonymous. You can cancel anytime.</Trans>
         </h3>
       </div>
 
@@ -111,36 +113,43 @@ export default function Subscriptions({
               <div
                 key={plan.id}
                 className={cn(
-                  "w-[90vw] rounded-3xl border p-6 cursor-pointer transition-all",
+                  ` w-[90vw] rounded-3xl  border-[3px] p-[20px]  cursor-pointer transition-all ${plan.name == "Premium" ? "bg-premium-gradient" : "bg-deluxe-gradient"} `,
                   isSelected
-                    ? "border-[#ff5c5c] bg-[#1c1c1f]"
-                    : "border-[#333] bg-[#111115] hover:border-[#444]"
+                    ? "border-[#ff5c5c] "
+                    : "border-[#333]  hover:border-[#444]"
                 )}
                 onClick={() => setSelected(plan.id)}
               >
-                <div className="flex items-center text-xl font-semibold text-white">
-                  {plan.icon}
-                  <span>{plan.name}</span>
+                <div className="gap-[10px] border-b-[1px] border-[#242529]">
+                  <div className="flex items-center text-xl font-semibold text-white">
+                    {plan.icon}
+                    <span>{plan.name}</span>
+                  </div>
+
+                  <p className="text-[24px]  font-extrabold ">
+                    {plan.displayPrice}
+                    <span className="text-sm text-white/70 font-normal ml-1">
+                      / {plan.billingInterval}
+                    </span>
+                  </p>
+                  <div className="text-[10px] text-[#9B9FA4] mb-[10px]">
+                    <p>{plan.description}</p>
+                  </div>
                 </div>
-
-                <p className="text-lg mt-2 font-bold ">
-                  {plan.displayPrice}
-                  <span className="text-sm text-white/70 font-normal ml-1">
-                    / {plan.billingInterval}
-                  </span>
-                </p>
-
-                <ul className="mt-4 space-y-2 text-white text-sm">
+                <div className="my-[10px] text-[12px]">
+                  <h3>Get anything you need to get started.</h3>
+                </div>
+                <ul className="mt-[10px] space-y-[10px] text-white text-[10px]">
                   {plan.features.map((feature, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <Checkmark className={`${tickColor} mt-1 `} />
-                      <span>{feature}</span>
+                    <li key={index} className="flex items-center gap-1">
+                      <Checkmark className={`${tickColor}  `} />
+                      <span className="font-normal">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
                 <Button
-                  className={`${plan.name == "Premium" ? "border-white" : "border-[#ff5c5c]"} mt-6 w-full rounded-[30px] border  p-[25px] font-medium text-[14px]  transition-colors`}
+                  className={`${plan.name == "Premium" ? "border-[#242529]" : "border-[#ff5c5c]"} mt-[10px] w-full h-[45px] rounded-[30px] border-[1px]  p-[25px]  py-[14px] font-500 text-[14px]  transition-colors`}
                   style={{
                     background:
                       "linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%)",
