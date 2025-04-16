@@ -18,6 +18,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import React from "react";
 import { useMediaQuery } from "@/app/hooks/useMediaQuery";
 import { cn } from "@/lib/utils";
+import ExploreBanner from "@/app/[locale]/(authenticated)/subscription/explore-banner-desktop";
+import ExploreBannerDesktop from "@/app/[locale]/(authenticated)/subscription/explore-banner-desktop";
+import ExploreBannerMobile from "@/app/[locale]/(authenticated)/subscription/explore-banner-mobile";
 
 const StartFlirting = () => {
   const { user } = useUser();
@@ -76,7 +79,7 @@ export default function ExplorePageBanner() {
       return <Skeleton className="h-full w-full" />;
 
     if (!isSignedUp(user?.user)) {
-      return <StartFlirting />;
+      return isDesktop ? <ExploreBannerDesktop /> : <ExploreBannerMobile />;
     } else if (!isSubscribedOrTrial(user?.user))
       return (
         <BecomePremiumHeading onclick={() => router.push("/subscription")} />
@@ -89,7 +92,7 @@ export default function ExplorePageBanner() {
         />
       );
     } else {
-      return <StartFlirting />;
+      return isDesktop ? <ExploreBannerDesktop /> : <ExploreBannerMobile />;
     }
   };
 
@@ -99,14 +102,11 @@ export default function ExplorePageBanner() {
         `relative  w-full `,
         isSignedUp(user?.user) && !isSubscribedOrTrial(user?.user)
           ? isDesktop
-            ? "h-[200px]"
+            ? "h-[400px]"
             : "h-[160px]"
           : `
-            h-[120px]
-            max-xl:h-[13vh]
-            max-lg:h-[06vh]
-            max-md:h-[05vh]
-          max-sm:h-[25vh]
+            h-[200px]
+      
       
 
           `

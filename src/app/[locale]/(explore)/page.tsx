@@ -13,8 +13,8 @@ import GetTokensDesktop from "../(authenticated)/subscription/get-tokens-desktop
 import BuyTokensDialog from "@/app/components/dialog/buy-tokens";
 import GeneratorNotifications from "@/app/components/notifications/generator-notifications";
 import GetTokensMobile from "../(authenticated)/subscription/get-tokens-mobile";
-import FeedbackCard from "@/app/components/feedback/page";
-import FaqSection from "@/app/components/faq/page";
+import FeedbackCard from "@/app/[locale]/(authenticated)/subscription/community-feedback";
+import FaqSection from "@/app/[locale]/(authenticated)/subscription/faq";
 
 export const dynamic = "force-dynamic";
 
@@ -56,18 +56,16 @@ export default async function ExplorePage({
         >
           <Suspense fallback={<PostsGridSkeleton />}>
             <SubscriptionTabs defaultTab="monthly" />
-            {/*  Buy token desktop section */}
+            {/* Buy token desktop section
             <div className="hidden lg:block w-full">
               <GetTokensDesktop />
             </div>
-
             {/*  Buy token mobile section */}
-            <div className="block lg:hidden w-full">
+            {/* <div className="block lg:hidden w-full">
               <GetTokensMobile />
-            </div>
+            </div> */}
             {/* Feedback section */}
             <FeedbackCard />
-
             {/* Faq section */}
             {/* <div className="md:w-[80%]"> */}
             <FaqSection />
