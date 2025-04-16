@@ -110,11 +110,7 @@ export default function SubscriptionTabs({
           value={TABS.onetimeSubscription.value}
           className="flex flex-1 overflow-auto"
         >
-          {isDesktop ? (
-            <SubscriptionDesktop selectedPackage="one-time" />
-          ) : (
-            <SubscriptionMobile selectedPackage="one-time" />
-          )}
+          {isDesktop ? <GetTokensDesktop /> : <GetTokensMobile />}
         </TabsContent>
       </Tabs>
     </main>

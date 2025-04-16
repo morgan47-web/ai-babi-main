@@ -36,7 +36,7 @@ body {
     --radius: 0.5rem;
     --divider: 228 6% 15% /*#242529 */;
     --white-secondary: 216 100% 99%; /* #FAFCFF */
-    --tertiary-text:  213 5% 63%; /* #9B9FA4 */
+    --tertiary-text: 213 5% 63%; /* #9B9FA4 */
     --menu: 0 0% 6%; /* #0F0F0F */
     --premium: 32 100% 32%; /* A15700 */
   }
@@ -66,7 +66,7 @@ body {
     --success: 130 67% 42%; /* #23B33A */
     --divider: 228 6% 15% /*#242529 */;
     --white-secondary: 216 100% 99%; /* #FAFCFF */
-    --tertiary-text:  213 5% 63%; /* #9B9FA4 */
+    --tertiary-text: 213 5% 63%; /* #9B9FA4 */
     --menu: 0 0% 6%; /* #0F0F0F */
     --premium: 32 100% 32%; /* A15700 */
   }
@@ -154,4 +154,11 @@ input:-webkit-autofill {
   ::-webkit-scrollbar {
     width: 4px;
   }
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }

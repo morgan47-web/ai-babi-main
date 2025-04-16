@@ -1,5 +1,5 @@
 "use client";
-import VideoCallUI from "@/app/components/calling/page";
+import VideoCallUI from "@/app/[locale]/(authenticated)/subscription/calling-interface";
 
 export default function Calling() {
   return (
