@@ -162,3 +162,15 @@ input:-webkit-autofill {
   font-weight: 900;
   font-style: normal;
 }
+
+.bg-premium-gradient {
+  background: linear-gradient(41.89deg, #0f0f0f 71.32%, #101828 98.82%);
+}
+
+.bg-deluxe-gradient {
+  background: linear-gradient(37.43deg, #0f0f0f 82.1%, #3a0b00 99.39%);
+}
+
+.font-500 {
+  font-weight: 500;
+}
