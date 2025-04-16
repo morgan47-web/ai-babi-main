@@ -45,16 +45,16 @@ const reviews: Feedback[] = [
 export default function FeedbackCard() {
   return (
     <div className="my-[2vh]">
-      <div className="space-y-1 text-center">
+      <div className=" text-center">
         <h1 className="text-[25px] text-[#FAFCFF] font-medium">
           <Trans>Community Feedback</Trans>
         </h1>
-        <h3 className="text-border/60 text-center text-[14px]">
+        <h3 className="text-border/60 text-center text-[12px]">
           <Trans>Here's what users say about us!</Trans>
         </h3>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 py-[10px]">
         {reviews.map(({ name, feedback, imageUrl, rating }, i) => (
           <div
             key={i}
@@ -62,14 +62,14 @@ export default function FeedbackCard() {
           >
             {/* Top section */}
             <div>
-              <p className="text-sm leading-relaxed">{feedback}</p>
+              <p className="text-[12px] leading-relaxed">{feedback}</p>
             </div>
 
             {/* Bottom section */}
             <div className="flex items-center justify-between">
               {/* Avatar and name */}
               <div className="flex items-center gap-2">
-                <Avatar.Root className="inline-flex h-8 w-8 select-none items-center justify-center overflow-hidden rounded-full align-middle bg-zinc-600">
+                <Avatar.Root className="inline-flex h-[32px] w-[32px] select-none items-center justify-center overflow-hidden rounded-full align-middle bg-zinc-600">
                   {imageUrl ? (
                     <Avatar.Image
                       className="h-full w-full object-cover"

@@ -41,12 +41,12 @@ const faqData: FaqItem[] = [
 
 export default function FaqSection() {
   return (
-    <div className="p-4 w-full  lg:px-[9vw]  ">
-      <h2 className="text-2xl sm:text-3xl font-bold text-center text-white mb-8">
+    <div className="p-4 w-full  lg:px-[9vw] space-y-[10px] ">
+      <h2 className="text-2xl sm:text-3xl font-bold text-center text-white ">
         Frequently Asked Questions
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[10px] ">
         {faqData.map((faq, idx) => (
           <Accordion.Root type="single" collapsible key={idx}>
             <Accordion.Item
@@ -54,12 +54,12 @@ export default function FaqSection() {
               className="border border-zinc-800 rounded-xl overflow-hidden bg-[0F0F0F] text-[#9B9FA4] "
             >
               <Accordion.Header className="flex">
-                <Accordion.Trigger className="flex w-full items-center justify-between p-4 text-left text-sm sm:text-[14px] font-light transition hover:bg-zinc-800">
+                <Accordion.Trigger className="flex w-full items-center justify-between p-4 text-left text-sm sm:text-[14px] font-light transition ">
                   {faq.question}
                   <ChevronDown className="transition-transform duration-300 group-data-[state=open]:rotate-180" />
                 </Accordion.Trigger>
               </Accordion.Header>
-              <Accordion.Content className="px-4 pb-4 text-sm text-zinc-300">
+              <Accordion.Content className="px-4 py-4 text-sm text-zinc-300 border-t-[1px] border-[#242529]  ">
                 {faq.answer}
               </Accordion.Content>
             </Accordion.Item>
