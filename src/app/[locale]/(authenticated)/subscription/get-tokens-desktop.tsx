@@ -22,28 +22,28 @@ export default function GetTokensDesktop() {
     {
       id: "50-tokens",
       tokens: 50,
-      price: "€9.99",
+      price: "9.99",
       diamonds: 4,
     },
     {
       id: "200-tokens",
       tokens: 200,
-      price: "€14.99",
+      price: "14.99",
       diamonds: 4,
     },
     {
       id: "550-tokens",
       tokens: 550,
-      price: "€29.99",
-      bonus: "+10% ",
-      diamonds: 2,
+      price: "29.99",
+      bonus: "10%",
+      diamonds: 1,
     },
     {
       id: "1150-tokens",
       tokens: 1150,
-      price: "€54.99",
-      bonus: "+15% ",
-      diamonds: 3,
+      price: "54.99",
+      bonus: "15%",
+      diamonds: 2,
     },
   ];
 
@@ -56,20 +56,24 @@ export default function GetTokensDesktop() {
         `
       )}
     >
-      <div className={`space-y-1 text-center`}>
-        <h1 className={`text-[20px] text-[#FAFCFF]`}>
+      <div className="flex flex-col space-y-1 px-[10px] pt-4 text-center">
+        <h1
+          className={`
+              w-full  text-[24px] leading-[30px] text-white-secondary font-semibold
+            `}
+        >
           <Trans>Get tokens</Trans>
         </h1>
-        <h3 className={`text-border/60 text-center `}>
+        <h5 className="text-[12px] leading-[20px]  text-center text-[#9B9FA4]">
           <Trans>
             Buy Tokens as a one-off purchase. No commitment, no expiration date.
           </Trans>
-        </h3>
+        </h5>
       </div>
       <Card
         className={`
           grid grid-cols-2 grid-cols-[350px_350px] rounded-[40px] 
-          border-divider bg-[#111115] p-10
+          border-divider  p-10 py-[10px]
           
         `}
       >

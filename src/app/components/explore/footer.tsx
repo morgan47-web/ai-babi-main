@@ -15,20 +15,20 @@ export default function Footer({
   return (
     <footer
       className={cn(
-        `flex w-full flex-col items-center justify-evenly`,
+        `flex w-full flex-col items-center justify-evenly bg-[#242529]`,
         className
       )}
     >
       {displayImage && (
         <div className="relative w-full">
           {/* For small screens (mobile) */}
-          <div className="block md:hidden h-[430px] relative w-full">
+          <div className="block md:hidden h-[332px] relative w-[393px">
             <Image
               src="/images/banner-footer-explore2.jpg"
               alt="find your own AI babe"
               fill
               priority
-              className="object-fill"
+              className=" w-full h-full "
             />
           </div>
 
@@ -39,13 +39,13 @@ export default function Footer({
               alt="find your own AI babe"
               fill
               priority
-              className="object-cover"
+              className=" object-cover"
             />
           </div>
         </div>
       )}
 
-      <div className="flex w-full items-center justify-center bg-footer">
+      <div className="flex w-full items-center justify-center">
         <div className="grid max-w-2xl grid-cols-2 gap-6 p-6">
           {/* links */}
           <div className="flex flex-col items-start space-y-3">

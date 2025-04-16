@@ -7,24 +7,25 @@ export default function ExploreBannerMobile() {
   return (
     <div className="relative w-full bg-[#181b1c] text-white px-4 py-5 overflow-hidden ">
       {/* Blurred background icons */}
-      <div className="absolute inset-0 left-[200px] z-10 opacity-80">
+      <div className="absolute inset-0 left-[200px] z-10 opacity-90 ">
         <Image
           src="/images/explore-banner-icons.png"
           alt="background icons"
           fill
-          className="object-contain "
+          className=" h-full w-full object-cover"
         />
       </div>
 
       {/* Main content with text on left, award on right */}
-      <div className="relative z-10 flex items-start justify-between outfit">
+      <div className="relative z-10 flex items-start justify-between outfit w-full">
         {/* Left: Text content */}
         <div className="w-[60%] space-y-2">
           <h2 className="text-[20px] font-extrabold leading-tight text-[#C4C4C4]">
             Join our community <br />
-            <span className="text-white font-extrabold">of +130 000 users</span>
+            of
+            <span className="text-white font-extrabold"> +130 000 users</span>
           </h2>
-          <p className="text-[12px] text-[#9B9FA4] leading-relaxed">
+          <p className="text-[12px] text-[#9B9FA4] leading-relaxed font-normal">
             Upgrade to Premium or Deluxe today and enjoy access to generating
             limitless images with your own perfect companion!
           </p>
