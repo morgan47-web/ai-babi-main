@@ -16,6 +16,8 @@ import BuyAddonsButton from "@/app/components/actions/truevo/buy-addons";
 
 export default function GetTokensDesktop() {
   const pricing = usePricing();
+
+  if (!pricing) return null;
   const [selected, setSelected] = useState("1");
 
   const tokenPlans: TokenPlan[] = [
@@ -97,12 +99,12 @@ export default function GetTokensDesktop() {
               discount={plan.discount ?? undefined}
             />
           ))} */}
-          {tokenPlans.map((plan, i) => (
+          {pricing.state.addons.map((plan, i) => (
             <OneTimePaymentCard
               key={"plan" + plan.id}
               diamonds={Math.min(4, i + 1)}
               tokens={displayTokenAmount(plan.tokens)}
-              displayPrice={plan.price}
+              displayPrice={plan.displayPrice}
               selected={selected === plan.id}
               onClick={() => {
                 setSelected(plan.id);
