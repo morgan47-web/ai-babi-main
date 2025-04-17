@@ -14,6 +14,8 @@ import { useState } from "react";
 
 export default function GetTokensMobile() {
   const pricing = usePricing();
+
+  if (!pricing) return null;
   const [selected, setSelected] = useState("1");
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
@@ -87,17 +89,17 @@ export default function GetTokensMobile() {
               discount={plan.discount ?? undefined}
             />
           ))} */}
-          {tokenPlans.map((plan, i) => (
+          {pricing.state.addons.map((plan, i) => (
             <OneTimePaymentCard
               key={"plan" + plan.id}
-              diamonds={Math.min(plan.diamonds, i + 1)}
+              diamonds={Math.min(4, i + 1)}
               tokens={displayTokenAmount(plan.tokens)}
-              displayPrice={plan.price}
+              displayPrice={plan.displayPrice}
               selected={selected === plan.id}
               onClick={() => {
                 setSelected(plan.id);
               }}
-              discount={plan.bonus ?? undefined}
+              discount={plan.discount ?? undefined}
             />
           ))}
         </div>
