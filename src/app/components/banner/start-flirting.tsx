@@ -21,6 +21,7 @@ import { cn } from "@/lib/utils";
 import ExploreBanner from "@/app/[locale]/(authenticated)/subscription/explore-banner-desktop";
 import ExploreBannerDesktop from "@/app/[locale]/(authenticated)/subscription/explore-banner-desktop";
 import ExploreBannerMobile from "@/app/[locale]/(authenticated)/subscription/explore-banner-mobile";
+import { usePricing } from "@/app/context/pricing";
 
 const StartFlirting = () => {
   const { user } = useUser();
@@ -102,7 +103,7 @@ export default function ExplorePageBanner() {
         `relative  w-full `,
         isSignedUp(user?.user) && !isSubscribedOrTrial(user?.user)
           ? isDesktop
-            ? "h-[400px]"
+            ? "h-[200px]"
             : "h-[160px]"
           : `
             h-[200px]

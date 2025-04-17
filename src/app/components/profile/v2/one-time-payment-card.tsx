@@ -1,8 +1,6 @@
-import { CoinIcon } from "@/components/icons/generated";
-import { TokenIcon } from "@/components/icons/generated/CoinIcon";
+import TokenIcon from "@/components/icons/generated/CoinIcon";
 import { cn } from "@/lib/utils";
 import { Trans } from "@lingui/react/macro";
-import { Star } from "lucide-react";
 
 interface OneTimePaymentCardProps extends React.HTMLAttributes<HTMLDivElement> {
   diamonds: number;
