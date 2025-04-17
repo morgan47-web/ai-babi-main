@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function TokenIcon({ className = "" }: { className?: string }) {
+function TokenIcon({ className = "" }: { className?: string }) {
   return (
     <Image
       src="/icons/coin-icon.svg"
@@ -12,3 +12,4 @@ export function TokenIcon({ className = "" }: { className?: string }) {
     />
   );
 }
+export default TokenIcon;

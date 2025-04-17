@@ -1,5 +1,6 @@
 "use client";
 
+import { usePricing } from "@/app/context/pricing";
 import { Checkmark } from "@/components/icons/generated";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -17,6 +18,10 @@ export default function Subscriptions({
   setSelected,
   selectedPackage,
 }: SubscriptionsProps) {
+  const pricing = usePricing();
+
+  if (!pricing) return null;
+  // console.log(pricing);
   const plans = [
     {
       id: "premium-monthly",
@@ -57,7 +62,8 @@ export default function Subscriptions({
     },
     {
       id: "premium-yearly",
-      name: "Premium (Yearly)",
+      name: "Premium",
+      icon: <Gem className="text-[#3B82F6] mr-2" size={22} />, // Blue
       tickColor: "text-white/40",
       displayPrice: "€139.99",
       billingInterval: "yearly",
@@ -84,9 +90,22 @@ export default function Subscriptions({
       ],
     },
   ];
-
-  const filteredPlans = plans.filter(
-    (plan) => plan.billingInterval === selectedPackage
+  const features = [
+    "500 tokens/month + 10 daily bonus",
+    "Unlimited Chat",
+    "100 Audio Messages a Month",
+    "800 Generate Images a Month",
+    "Unlimited Babes Creation",
+    "Skip Queues & Waiting",
+    "Unlock ALL NSFW Reels",
+  ];
+  const description =
+    "Get a taste of what mybabes has to offer with access to immersive AI chat models, image generation and custom character creation.";
+  // const filteredPlans = plans.filter(
+  //   (plan) => plan.billingInterval === selectedPackage
+  // );
+  const filteredPlans = pricing.state.subscriptions.filter(
+    (plan) => plan.billingPeriod === selectedPackage
   );
 
   return (
@@ -123,24 +142,24 @@ export default function Subscriptions({
                 <div className="gap-[10px] border-b-[1px] border-[#242529]">
                   <div className="flex items-center text-xl font-semibold text-white">
                     {plan.icon}
-                    <span>{plan.name}</span>
+                    <span>{plan.displayName}</span>
                   </div>
 
                   <p className="text-[24px]  font-extrabold ">
                     {plan.displayPrice}
                     <span className="text-sm text-white/70 font-normal ml-1">
-                      / {plan.billingInterval}
+                      / {plan.billingPeriod}
                     </span>
                   </p>
                   <div className="text-[10px] text-[#9B9FA4] mb-[10px]">
-                    <p>{plan.description}</p>
+                    <p>{description}</p>
                   </div>
                 </div>
                 <div className="my-[10px] text-[12px]">
                   <h3>Get anything you need to get started.</h3>
                 </div>
                 <ul className="mt-[10px] space-y-[10px] text-white text-[10px]">
-                  {plan.features.map((feature, index) => (
+                  {features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-1">
                       <Checkmark className={`${tickColor}  `} />
                       <span className="font-normal">{feature}</span>

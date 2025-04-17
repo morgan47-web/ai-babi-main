@@ -15,11 +15,13 @@ import GeneratorNotifications from "@/app/components/notifications/generator-not
 import GetTokensMobile from "../(authenticated)/subscription/get-tokens-mobile";
 import FeedbackCard from "@/app/[locale]/(authenticated)/subscription/community-feedback";
 import FaqSection from "@/app/[locale]/(authenticated)/subscription/faq";
+import { usePricing } from "@/app/context/pricing";
 
 export const dynamic = "force-dynamic";
 
 async function ExploreContent() {
   const resp = await getChatbots();
+
   if (!resp.ok || !resp.data) {
     return <PostsGridSkeleton />;
   }
